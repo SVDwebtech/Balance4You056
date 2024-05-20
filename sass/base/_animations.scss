@@ -1,0 +1,124 @@
+/////////////////////////////////////////////////////////////////////////////
+// animate hamburger menu
+////////////////////////////////////////////////////////////////////////////
+@keyframes animateNavListContainerMoveIn {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes animateNavListContainerMoveOut {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes animateNavItemsMoveIn {
+  0% {
+    transform: translateY(25px);
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes animateNavItemsMoveOut {
+  0% {
+    // transform: translateX(0px);
+    opacity: 1;
+  }
+
+  100% {
+    // transform: translateX(200px);
+    opacity: 0;
+  }
+}
+//////////////////////////////////////////////////////////////////////////////
+// animate remove slide left
+/////////////////////////////////////////////////////////////////////////////
+@keyframes animateRemoveSlideToLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+    transform-origin: left center;
+  }
+  10% {
+    opacity: .1;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-1000px) scale(0);
+  }
+}
+//////////////////////////////////////////////////////////////////////////////
+// animate remove slide right
+/////////////////////////////////////////////////////////////////////////////
+@keyframes animateRemoveSlideToRight {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+    transform-origin: right center;
+  }
+  10% {
+    opacity: .1;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(1000px) scale(0);
+  }
+}
+//////////////////////////////////////////////////////////////////////////////
+// animate add slide right
+/////////////////////////////////////////////////////////////////////////////
+@keyframes animateAddSlideFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(1000px) scale(0);
+  }
+  35% {
+    opacity: 0;
+  }
+  60% {
+    opacity: .5
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+//////////////////////////////////////////////////////////////////////////////
+// animate add slide left
+/////////////////////////////////////////////////////////////////////////////
+@keyframes animateAddSlideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-1000px) scale(0);
+  }
+  35% {
+    opacity: 0;
+  }
+  60% {
+    opacity: .5
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+

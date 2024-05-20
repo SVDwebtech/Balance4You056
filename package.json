@@ -1,0 +1,22 @@
+{
+  "name": "goldbergtobacco054",
+  "version": "1.0.0",
+  "description": "online shop for tobacco products",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass --watch sass/main.scss public/css/main.css",
+    "nodemon-watch": "nodemon index.js -e *",
+    "dev": "npm-run-all --parallel watch:sass nodemon-watch"
+  },
+  "author": "Schalk van Dyk",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.3",
+    "sass": "^1.71.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "npm-run-all": "^4.1.5"
+  }
+}

@@ -1,0 +1,40 @@
+// typography
+// font-family: 'Lato', sans-serif; font-weight: 400, 500, 700, 900;   --- H3, H4, H5 &Body Text
+// font-family: 'Playpen Sans', cursive;   --- H2
+// font-family: 'Rum Raisin', sans-serif;  --- H1
+
+body {
+	color: $white;
+	font-family: 'Lato', sans-serif;
+	font-size: clamp(1.4rem, 4.6vw, 1.6rem);
+	font-weight: 400;
+	text-align: center;
+	line-height: 1.6;
+}
+.headingHero {
+	&__headingH1 {
+		font-size: clamp(1.8rem, 6vw, 2rem);
+	}
+	&__byline {
+		font-size: clamp(1.6rem, 6vw, 1.8rem);
+	}
+	&__intro {
+		font-size: clamp(1.4rem, 4.6vw, 1.6rem);
+	}
+}
+.headingH2 {
+	font-size: clamp(1.8rem, 6vw, 2rem);
+}
+.headingH3 {
+	font-size: clamp(1.6rem, 6vw, 1.8rem);
+}
+.headingH4 {
+	font-size: clamp(1.6rem, 6vw, 1.8rem);
+}
+.paragraph {
+}
+.btn {
+	font-size: clamp(1.6rem, 5.5vw, 1.8rem);
+}
+.footer {
+}

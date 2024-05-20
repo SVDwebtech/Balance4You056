@@ -1,0 +1,159 @@
+// style navigation
+.logo {
+      &__figure {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: clamp(.12rem, 3vw, 4rem);
+            position: relative;
+            z-index: 100;
+      }
+      &__img {
+            display: block;
+            width: 4.5rem;
+            height: auto;
+      }
+  }
+  .hamburgerBtn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: none;
+      background-color: transparent;
+      width: 3rem;
+      height: 4.6rem;
+      padding: 0;
+      margin: 0;
+      cursor: pointer;
+      position: relative;
+      z-index: 100;
+      backface-visibility: hidden;
+      &__hamburgerBar {
+          background-color: $goldenrod;
+          width: 100%;
+          height: 3px;
+      }
+      &__hamburgerBar--top,
+      &__hamburgerBar--middle,
+      &__hamburgerBar--bottom {
+          position: absolute;
+          left: 0;
+      }
+      &__hamburgerBar--top { 
+          top: 32%;
+          transition: all .5s;
+      }
+      &__hamburgerBar--middle { 
+          top: 50%;
+          transition: opacity 3s;
+      }
+      &__hamburgerBar--bottom {
+          top: 67%;
+          transition: all .5s;
+      }
+      &__hamburgerBar--transparent {
+          opacity: 0;
+          transition: all 0s;
+      }
+      &:hover > &__hamburgerBar--top {
+          transform: translateY(-2px);
+      }
+      &:hover > &__hamburgerBar--bottom {
+          transform: translateY(2px);
+      }
+      .navbarSection > & > &__hamburgerBar--right {
+      transform: rotate(135deg);
+      height: 4px;
+      top: 50%;
+      }
+      .navbarSection > & > &__hamburgerBar--left {
+      transform: rotate(-135deg);
+      height: 4px;
+      top: 50%;
+      }
+  }   
+  .navList--displayNone {
+      display: none;
+  }
+  .navList--display {
+      display: flex;
+  }
+  .navList {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: $white;
+      width: 100%;
+      height: 120vh;
+      margin: 0;
+      padding: 12rem 3rem;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      opacity: 1;
+      z-index: 0;
+      &__navItem {
+           margin-bottom: 1rem;
+      }
+      &__navLink {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: .5rem;
+          position: relative;
+          z-index: 100;
+          transition: all .4s;
+      }
+      &__navLink::after {
+          content: "";
+          background-color: $goldenrod;
+          height: 2px;
+          width: 99%;
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          z-index: -100;
+          transform: scaleX(0);
+          transform-origin: center;
+          transition: transform 0s;
+      }
+      &__navLink:hover::after {
+          transform: scaleX(1);
+          transition: .4s ease-in;
+      }
+      &__navLink:hover {
+          animation: animateNavLink .4s ease-in 1 forwards;
+      }
+      .navFrame {
+          background-color: $licorice;
+          border-bottom: 1px solid $goldenrod;
+          // padding: .75rem clamp(2rem, 6.5vw, 4rem);
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          z-index: 100;
+      }
+      &__icon {
+          background-color: transparent;
+          height: 24px;
+          width: 24px;
+          &--rightArrow {
+              height: 16px;
+              width: 16px;
+          }
+      }
+  }
+  .navList--navListMoveIn {
+    animation: animateNavListContainerMoveIn .4s ease-out forwards;
+  }
+   .navList--navListMoveOut {
+    animation: animateNavListContainerMoveOut .4s ease-out .8s forwards;
+  }
+  .navItem--moveIn {
+    animation: animateNavItemsMoveIn .4s ease-out forwards;
+  }
+  .navItem--moveOut {
+    animation: animateNavItemsMoveOut .3s ease-in forwards;
+  } 
