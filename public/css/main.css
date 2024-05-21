@@ -452,7 +452,7 @@ body {
   animation: animateNavLink 0.4s ease-in 1 forwards;
 }
 .navList .navFrame {
-  background-color: #1b1513;
+  background-color: rgb(15, 4, 0);
   border-bottom: 1px solid #ddad00;
   position: absolute;
   top: 0;
@@ -623,7 +623,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1b1513;
+  background-color: rgb(15, 4, 0);
   padding: 1rem 2rem;
   visibility: hidden;
   opacity: 0;
@@ -647,7 +647,7 @@ body {
 }
 
 .navbar--background {
-  background-color: #1b1513;
+  background-color: rgb(15, 4, 0);
   border-bottom: 1px solid #ddad00;
 }
 
