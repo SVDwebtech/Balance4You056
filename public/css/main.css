@@ -189,6 +189,12 @@ a {
   color: inherit;
 }
 
+@font-face {
+  font-family: "Gagalin";
+  src: local("Gagalin"), url("../fonts/Gagalin.ttf") format("truetype"), url("../fonts/Gagalin.otf") format("opentype"), url("../fonts/Gagalin.woff") format("woff"), url("../fonts/Gagalin.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   color: #f0f0f0;
   font-family: "Lato", sans-serif;
@@ -198,8 +204,13 @@ body {
   line-height: 1.6;
 }
 
+body {
+  font-family: "Gagalin";
+}
+
 .headingHero__headingH1 {
   font-size: clamp(1.8rem, 6vw, 2rem);
+  font-family: "Gagalin";
 }
 .headingHero__byline {
   font-size: clamp(1.6rem, 6vw, 1.8rem);
@@ -218,6 +229,11 @@ body {
 
 .headingH4 {
   font-size: clamp(1.6rem, 6vw, 1.8rem);
+}
+
+.paragraph--logo {
+  color: red;
+  font-family: "Gagalin", sans-serif;
 }
 
 .btn {

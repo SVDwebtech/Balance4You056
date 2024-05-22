@@ -3,6 +3,18 @@
 // font-family: 'Playpen Sans', cursive;   --- H2
 // font-family: 'Rum Raisin', sans-serif;  --- H1
 
+@font-face {
+	font-family: 'Gagalin';
+	src: 
+		local('Gagalin'),
+		url('../fonts/Gagalin.ttf') format('truetype'),
+		url('../fonts/Gagalin.otf') format('opentype'),
+	     	url('../fonts/Gagalin.woff') format('woff'),
+	     	url('../fonts/Gagalin.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
 body {
 	color: $white;
 	font-family: 'Lato', sans-serif;
@@ -11,9 +23,13 @@ body {
 	text-align: center;
 	line-height: 1.6;
 }
+body {
+	font-family: 'Gagalin';
+  }
 .headingHero {
 	&__headingH1 {
 		font-size: clamp(1.8rem, 6vw, 2rem);
+		font-family: 'Gagalin';
 	}
 	&__byline {
 		font-size: clamp(1.6rem, 6vw, 1.8rem);
@@ -32,6 +48,10 @@ body {
 	font-size: clamp(1.6rem, 6vw, 1.8rem);
 }
 .paragraph {
+	&--logo {
+		color: red;
+		font-family: 'Gagalin', sans-serif;
+	}
 }
 .btn {
 	font-size: clamp(1.6rem, 5.5vw, 1.8rem);
