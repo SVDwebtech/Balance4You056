@@ -22,14 +22,14 @@
         transform: translateY(-1px);
     }
     &--primary {
-        background-color: $goldenrod;
+        background-color: $goldenrod-yellow;
     }
     &--secondary {
-        background-color: rgba($goldenrod, .25);
-        border: 2px solid rgba($licorice, .95);
+        background-color: rgba($goldenrod-yellow, .25);
+        border: 2px solid rgba($licorice-black, .95);
     }
     &--primary-legaAge {
-        background-color: $goldenrod;
+        background-color: $goldenrod-yellow;
         padding: .65em 3em;
     }
     &--about {

@@ -11,17 +11,23 @@
       }
       &__img {
             display: block;
-            width: 4.5rem;
+            width: 8rem;
             height: auto;
       }
   }
+.navbar__icon {
+    justify-items: flex-end;
+    display: block;
+    width: 4rem;
+    height: auto;
+}
   .hamburgerBtn {
       display: flex;
       flex-direction: column;
       justify-content: center;
       border: none;
       background-color: transparent;
-      width: 3rem;
+      width: 3.5rem;
       height: 4.6rem;
       padding: 0;
       margin: 0;
@@ -30,7 +36,7 @@
       z-index: 100;
       backface-visibility: hidden;
       &__hamburgerBar {
-          background-color: $goldenrod;
+          background-color: $goldenrod-yellow;
           width: 100%;
           height: 3px;
       }
@@ -107,7 +113,7 @@
       }
       &__navLink::after {
           content: "";
-          background-color: $goldenrod;
+          background-color: $goldenrod-yellow;
           height: 2px;
           width: 99%;
           position: absolute;
@@ -127,7 +133,7 @@
       }
       .navFrame {
           background-color: $dark;
-          border-bottom: 1px solid $goldenrod;
+          border-bottom: 1px solid $goldenrod-yellow;
           // padding: .75rem clamp(2rem, 6.5vw, 4rem);
           position: absolute;
           top: 0;
