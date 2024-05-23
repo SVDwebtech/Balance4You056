@@ -1,7 +1,27 @@
-// typography
-// font-family: 'Lato', sans-serif; font-weight: 400, 500, 700, 900;   --- H3, H4, H5 &Body Text
-// font-family: 'Playpen Sans', cursive;   --- H2
-// font-family: 'Rum Raisin', sans-serif;  --- H1
+// Primary-Heading --> H1
+// Gagalin is a bold, playful, and somewhat quirky typeface with a retro-futuristic vibe. When choosing fallback fonts, it's important to select options that are widely available and have a similar bold and rounded appearance. Here are a couple of suggestions:
+// Impact: Availability: Pre-installed on most Windows and macOS systems. Similarity: Impact is a bold, condensed typeface with a strong presence, which makes it a suitable fallback for Gagalin. While it lacks the playful quirks of Gagalin, its bold and heavy nature provides a similar impact.
+// Arial Black: Availability: Also widely available on most Windows and macOS systems. Similarity: Arial Black is a heavy, sans-serif font that can serve as a decent fallback for Gagalin due to its bold weight and straightforward design. Although it's more conventional than Gagalin, its thickness and readability are comparable.
+// When specifying fallback fonts in CSS, your font stack might look like this:
+// font-family: 'Gagalin', Impact, 'Arial Black', sans-serif;
+
+// Sub-Headings --> h2, h3, h4 & h5
+// Antonio (Sub-headings) is a geometric sans-serif font. Suitable fallback options should maintain its clean, modern look.
+// Fallback Fonts:
+// Oswald: A narrow sans-serif font available through Google Fonts, resembling Antonio's structure.
+// Verdana: A widely available sans-serif font with a clean and straightforward appearance.
+// font-family: "Antonio", sans-serif; font-weight: <weight>: Use a value from 100 to 700
+// font-family: 'Antonio', Oswald, Verdana, sans-serif;
+
+// Body Text --> paragraphs
+// Lato (Body Text)
+// Lato is a humanist sans-serif typeface known for its readability and friendly appearance. Fallback options should be widely available and offer good readability.
+// Fallback Fonts:
+// Helvetica: A widely used sans-serif typeface known for its readability.
+// Arial: Another widely available sans-serif font, often used as a fallback for many typefaces.
+// Segoe UI: A sans-serif font commonly used in Windows interfaces, providing good readability and a modern look.
+// font-family: 'Lato', sans-serif; font-weight: 400, 500, 700, 900;   
+// font-family: 'Lato', Helvetica, Arial, 'Segoe UI', sans-serif;
 
 @font-face {
 	font-family: 'Gagalin';
@@ -17,15 +37,13 @@
 
 body {
 	color: $white;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato', Helvetica, Arial, 'Segoe UI', sans-serif;
 	font-size: clamp(1.4rem, 4.6vw, 1.6rem);
 	font-weight: 400;
 	text-align: center;
 	line-height: 1.6;
 }
-body {
-	font-family: 'Gagalin';
-  }
+
 .headingHero {
 	&__headingH1 {
 		font-size: clamp(1.8rem, 6vw, 2rem);
