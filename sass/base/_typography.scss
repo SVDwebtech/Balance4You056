@@ -44,16 +44,28 @@ body {
 	line-height: 1.6;
 }
 
-.headingHero {
-	&__headingH1 {
-		font-size: clamp(1.8rem, 6vw, 2rem);
-		font-family: 'Gagalin';
+.primaryHeading {
+	&__title, &__subtitle {
+		display: block;
+		color: $sunset-cream;
+		font-family: 'Gagalin', Impact, 'Arial Black', sans-serif;
+		font-weight: 400;
+		line-height: 1;
+	}
+	&__title {
+		font-size: clamp(2.9rem, 6vw, 3.1rem);
+		letter-spacing: 4px;
+	}
+	&__subtitle {
+		font-size: clamp(2rem, 6vw, 2.2rem);
+		letter-spacing: 2px;
 	}
 	&__byline {
-		font-size: clamp(1.6rem, 6vw, 1.8rem);
-	}
-	&__intro {
+		display: block;
+		color: $goldenrod-yellow;
+		font-family: 'Antonio', Oswald, Verdana, sans-serif;
 		font-size: clamp(1.4rem, 4.6vw, 1.6rem);
+		font-weight: 400;
 	}
 }
 .headingH2 {
@@ -66,27 +78,14 @@ body {
 	font-size: clamp(1.6rem, 6vw, 1.8rem);
 }
 .paragraph {
-	&--logoHeading {
+	&--cta {
+		display: block;
 		color: $sunset-cream;
-		font-family: 'Gagalin', Impact, 'Arial Black', sans-serif;
-		font-size: 1.45rem;
-		line-height: 1;
-	}
-	&--logoByline {
-		color: $goldenrod-yellow;
-		font-family: 'Antonio', Oswald, Verdana, sans-serif;
-		font-size: .65rem;
-		line-height: 1;
-	}
-	&--logoSubheading {
-		color: $sunset-cream;
-		font-family: 'Gagalin', Impact, 'Arial Black', sans-serif;
-		font-size: 1rem;
-		line-height: 1;
 	}
 }
 .btn {
-	font-size: clamp(1.6rem, 5.5vw, 1.8rem);
+	font-size: clamp(1.6rem, 6vw, 1.8rem);
+	font-weight: 700;
 }
 .footer {
 }

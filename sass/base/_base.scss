@@ -36,6 +36,8 @@ html {
 
 body {
 	@include displayFlexColumn;
+	align-items: stretch;
+	gap: 5rem;
 	background-color: $licorice-black;
 	/* This makes dealing with the sizes of elements much easier, 
 		and generally eliminates a number of pitfalls you can stumble on
