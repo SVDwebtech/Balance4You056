@@ -13,11 +13,18 @@
             padding: 5rem 2rem 0rem;
             position: relative;
       }
+      &__heroOther {
+            height: auto;
+            padding: 5rem 2rem 5rem;
+      }
 }
 .hero {
       &__heroHeading {
             @include displayFlexColumn;
             gap: .5rem;
+      }
+      &__headingH2 {
+            margin-top: 5rem;
       }
       &__logoImg {
             display: block;
@@ -33,13 +40,6 @@
       &__ctaBtn {
             @include displayFlexRow;
             gap: .5rem;
-      }
-      &__ctaBtnIcon {
-            width: 3rem;
-            height: 3rem;
-      }
-      &__ctaParagraph {
-            // width: 30rem;
       }
 }
 

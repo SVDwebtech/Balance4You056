@@ -36,7 +36,7 @@
 }
 
 body {
-	color: $white;
+	color: $licorice-black;
 	font-family: 'Lato', Helvetica, Arial, 'Segoe UI', sans-serif;
 	font-size: clamp(1.4rem, 4.6vw, 1.6rem);
 	font-weight: 400;
@@ -69,10 +69,35 @@ body {
 	}
 }
 .headingH2 {
-	font-size: clamp(1.8rem, 6vw, 2rem);
+	color: $yale-blue;
+	font-family: 'Antonio', Oswald, Verdana, sans-serif;
+	font-size: clamp(2.6rem, 7vw, 2.8rem);
+	font-weight: 900;
+	text-transform: uppercase;
+	line-height: 1.2;
+	letter-spacing: 3px;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	&--subpage {
+		color: $goldenrod-yellow;
+		font-size: clamp(2.4rem, 7vw, 2.6rem);
+		text-transform: none;
+		text-decoration: none;
+	}
+	&--pageName {
+		color: $sunset-cream;
+		font-size: clamp(2.8rem, 7.5vw, 3rem);
+		text-decoration: none;
+	}
 }
 .headingH3 {
-	font-size: clamp(1.6rem, 6vw, 1.8rem);
+	color: $yale-blue;
+	font-family: 'Antonio', Oswald, Verdana, sans-serif;
+	font-size: clamp(1.8rem, 5.5vw, 2rem);
+	font-weight: 900;
+	text-transform: normal;
+	line-height: 1.2;
+	letter-spacing: 1px;
 }
 .headingH4 {
 	font-size: clamp(1.6rem, 6vw, 1.8rem);
@@ -82,10 +107,21 @@ body {
 		display: block;
 		color: $sunset-cream;
 	}
+	&--contactDetailContact {
+		line-height: 1.2;
+	}
 }
 .btn {
 	font-size: clamp(1.6rem, 6vw, 1.8rem);
 	font-weight: 700;
+	&--secondary {
+		font-size: clamp(1.4rem, 5.5vw, 1.6rem);
+	}
+}
+.contact {
+	&__address {
+		font-style: normal;
+	}
 }
 .footer {
 }

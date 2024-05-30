@@ -12,12 +12,13 @@ app.use(express.urlencoded({ extended: true }));
 //       console.log("Received a new request!");
 // });
 
-// home // working with templates
+// Home Page
 app.get('/', (req, res) => {
       // res.sendFile(path.join(__dirname, 'public/html/index.html'));
       const welcome = "This is the new home of Goldberg Tobacco Wholesalers";
       res.render('home', {data: welcome});
 });
+
 //working with params
 app.get('/xcountry/:exerciseType', (req, res) => {
       const { exerciseType } = req.params; 
@@ -99,6 +100,13 @@ app.patch('/comments/:id', (req, res) => {
       foundComment.comment = newCommentText;
       res.redirect('/commments');
 })
+
+// Contact Us Page
+app.get('/contact', (req, res) => {
+      const headingH2 = "Contact Us"
+      console.log("Welcome to the contact us page.")
+      res.render('contact', {headingH2});
+});
  
 
 // respond to any and all requests

@@ -25,8 +25,9 @@
         background-color: $goldenrod-yellow;
     }
     &--secondary {
-        background-color: rgba($goldenrod-yellow, .25);
+        background-color: rgba($sunset-cream, 1);
         border: 2px solid rgba($licorice-black, .95);
+        margin-top: 1rem;
     }
     &--primary-legaAge {
         background-color: $goldenrod-yellow;

@@ -1,0 +1,31 @@
+.sidebar {
+      @include displayFlexColumn;
+      gap: 5rem;
+      padding: 0 2rem;
+      width: min(100%, 45rem);
+}
+.contact {
+      @include displayFlexColumn;
+      gap: 3rem;
+      &__contactContentWrapper {
+            @include displayFlexColumn;
+            gap: 3rem;
+      }
+      &__address, &__googleMaps {
+            @include displayFlexColumn;
+            gap: 2rem;
+      }
+      &__contactLinkContact {
+            @include displayFlexColumn;
+            gap: .5rem;
+      }
+      &__googleIframeContainer {
+            border: 2px solid $yale-blue;
+            width: min(100%, 45rem);
+            padding: 1rem 1rem .5rem;
+      }
+      &__googleIframe {
+            width: min(100%, 45rem);
+            height: min(65vw, 28rem);
+      }
+}
