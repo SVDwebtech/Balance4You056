@@ -110,6 +110,15 @@ body {
 	&--contactDetailContact {
 		line-height: 1.2;
 	}
+	&--contactDetailFooter, &--copy, &--dev {
+		color: $sunset-cream;
+		line-height: 1.2;
+	}
+	&--devName {
+		color: $forest-green;
+		text-decoration: solid underline 1px;
+		text-underline-offset: 3px;
+	}
 }
 .btn {
 	font-size: clamp(1.6rem, 6vw, 1.8rem);
@@ -124,4 +133,12 @@ body {
 	}
 }
 .footer {
+	&__address {
+		font-style: normal;
+	}
+	&__navLink {
+		color: $sunset-cream;
+		font-size: clamp(1.6rem, 6vw, 1.8rem);
+		font-weight: 700;
+	}
 }

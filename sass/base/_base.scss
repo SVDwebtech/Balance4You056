@@ -36,7 +36,7 @@ html {
 
 body {
 	@include displayFlexColumn;
-	align-items: center;
+	align-items: stretch;
 	gap: 5rem;
 	background-color: $white;
 	/* This makes dealing with the sizes of elements much easier, 
