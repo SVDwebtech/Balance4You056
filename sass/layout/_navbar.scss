@@ -3,7 +3,10 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: $dark;
+      background: url("/img/WebsiteImages/Balance4YouDarkWoodHeroBackGroundPatternLandscape.webp");
+      background-position: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
       padding: 1rem 2rem;
       visibility: hidden;
       opacity: 0;
