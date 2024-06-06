@@ -1,88 +1,132 @@
 <%- include('partials/header') %>
       <main class="main">
             <section class="main__about about">
-                  <h2 class="about__headingH2 headingH2 headingH2--about">About</h2>
-                  <div class="about__aboutContentWrapper">
+                  <h2 class="about__headingH2 headingH2 headingH2--about">About Us</h2>
+                  <article class="about__article">
                         <figure class="about__figure">
-                              <!-- <img class="about__imgAboutComp about__imgAboutComp--front" src="img/WebsiteImages/GoldbergShopFront.jpg" alt="">
-                              <img class="about__imgAboutComp about__imgAboutComp--window" src="img/WebsiteImages/GoldbergShopWindow.jpg" alt="">
-                              <img class="about__imgAboutComp about__imgAboutComp--product2" src="img/WebsiteImages/GoldbergP2.jpg" alt="">
-                              <img class="about__imgAboutComp about__imgAboutComp--product1" src="img/WebsiteImages/GoldbergP1.jpg" alt=""> -->
-                        </figure>
-                        <article class="about__text">
-                              <h3 class="about__headingH3 headingH3 headingH3--about">Who we are</h3>
-                              <!-- <p class="about__paragraph paragraph paragraph--about">At Goldberg Tobacco 
-                                    Wholesalers, we're dedicated enthusiasts committed to providing top-quality 
-                                    smoking experiences. With years of expertise, we offer a diverse selection 
-                                    of trusted products ensuring reliability and satisfaction. Our exceptional 
-                                    customer service ensures informative, personalized interactions. Whether 
-                                    you're a seasoned smoker or new to vaping, trust us for your smoking needs 
-                                    responsibly.</p> -->
-                              <button class="btn btn--secondary btn--about">Contact Us</button>
-                        </article>
-                  </div>
+                              <figcaption class="about__figcaption">
+                                    <h3 class="about__headingH3 headingH3 headingH3--about">The Birth of Balance 4 You: <br class="about__breakLineAboutHeadingH3">A Boutique Health Shop</h3>
+                              </figcaption>
+                              <div class="about__grid-container grid-container grid-container--homeAbout">
+                                    <div class="grid-item grid-item--cabin photo1 photo1--homeAbout">
+                                          <img src="/img/WebsiteImages/Balance4YouShopImageNo (1).webp" alt="Photo 1">
+                                    </div>
+                                    <div class="grid-item grid-item--cabin photo2 photo2--homeAbout">
+                                          <img src="/img/WebsiteImages/Balance4YouShopImageNo (5).webp" alt="Photo 2">
+                                    </div>
+                                    <div class="grid-item grid-item--cabin photo3 photo3--homeAbout">
+                                          <img src="/img/WebsiteImages/Balance4YouShopImageNo (7).webp" alt="Photo 3">
+                                    </div>
+                                    <!-- Additional photos go here if needed -->
+                              </div>
+                        </figure>  
+                        <div class="about__cta">
+                              <p class="about__paragraph paragraph paragraph--about">Like a lotus flower, we too 
+                              have the ability to rise from the mud and bloom out of the darkness, radiating 
+                              into the world. Captured in my own muddy situations, feeling lost and alone, I 
+                              embarked on a spiritual journey to find my higher purpose. Despite daily challenges 
+                              and illness, I created balance and founded Balance 4 You – a Boutique Health Shop in 
+                              the heart of Vaalwater's Bushveld area, established in 2024 by Franciska Smith.</p>
+                              <button class="about__ctaBtn btn btn--secondary btn--about">
+                                    <svg class="btnIcons btnIcons--secondary" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M10.5 12H12V16H14M12 8H12.01M13.5628 20.8633C14.7268 20.658 15.8389 20.2256 16.8357 19.5905C17.8325 18.9555 18.6945 18.1303 19.3724 17.1622C20.0503 16.194 20.5309 15.1018 20.7867 13.948C21.0425 12.7941 21.0685 11.6011 20.8633 10.4372C20.658 9.27322 20.2256 8.1611 19.5905 7.1643C18.9555 6.1675 18.1303 5.30554 17.1622 4.62763C16.194 3.94972 15.1018 3.46914 13.948 3.21334C12.7941 2.95753 11.6011 2.9315 10.4372 3.13673C9.27322 3.34196 8.1611 3.77444 7.1643 4.40948C6.1675 5.04451 5.30554 5.86966 4.62763 6.83781C3.94972 7.80597 3.46914 8.89816 3.21334 10.052C2.95753 11.2059 2.9315 12.3989 3.13673 13.5628C3.34197 14.7268 3.77445 15.8389 4.40948 16.8357C5.04451 17.8325 5.86966 18.6945 6.83781 19.3724C7.80597 20.0503 8.89816 20.5309 10.052 20.7867C11.2059 21.0425 12.3989 21.0685 13.5628 20.8633Z" stroke="#0f0400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    More About Us
+                              </button>
+                        </div>
+                  </article>
             </section>
             <section class="main__products products">
                   <h2 class="products__headingH2 headingH2 headingH2--products">Our Products</h2>
-                  <div class="products__aboutContentWrapper">
-                        <div class="products__slider slider">
-                              <div class="slider__leftArrContainer">
-                                    <svg class="slider__arrow slider__leftArr leftArr" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M15 6L9 12L15 18" stroke="#f5aa15" stroke-width="2"/>
-                                    </svg>
-                              </div>
-                              <div class="slider__slidesAndIndexContainer">
-                                    <div class="slider__slidesContainer">
-                                          <figure class="slider__figure slider__displayBlock">
-                                                <!-- <img class="slider__productImg slider__productImg1" src="img/WebsiteImages/GoldbergProduct1.webp" alt=""> -->
-                                                <h4 class="slider__headingH4 headingH4 headingH4--productSlideName">Pop Hit Mini</h4>
-                                                <p class="slider__paragraph paragraph paragraph--productSlidePrice">R69.99</p>
-                                          </figure>
-                                          <figure class="slider__figure slider__displayNone">
-                                                <!-- <img class="slider__productImg slider__productImg2" src="img/WebsiteImages/GoldbergProduct2.webp" alt=""> -->
-                                                <h4 class="slider__headingH4 headingH4 headingH4--productSlideName">Mini Pod</h4>
-                                                <p class="slider__paragraph paragraph paragraph--productSlidePrice">R49.99</p>
-                                          </figure>
-                                          <figure class="slider__figure slider__displayNone">
-                                                <!-- <img class="slider__productImg slider__productImg3" src="img/WebsiteImages/GoldbergProduct3.webp" alt=""> -->
-                                                <h4 class="slider__headingH4 headingH4 headingH4--productSlideName">The Bar S1000</h4>
-                                                <p class="slider__paragraph paragraph paragraph--productSlidePrice">R89.99</p>
-                                          </figure>
-                                          <figure class="slider__figure slider__displayNone">
-                                                <!-- <img class="slider__productImg slider__productImg4" src="img/WebsiteImages/GoldbergProduct4.webp" alt=""> -->
-                                                <h4 class="slider__headingH4 headingH4 headingH4--productSlideName">Voom Mini</h4>
-                                                <p class="slider__paragraph paragraph paragraph--productSlidePrice">R79.99</p>
-                                          </figure>
-                                          <figure class="slider__figure slider__displayNone">
-                                                <!-- <img class="slider__productImg slider__productImg5" src="img/WebsiteImages/GoldbergProduct5.webp" alt=""> -->
-                                                <h4 class="slider__headingH4 headingH4 headingH4--productSlideName">Pop Hit Extra</h4>
-                                                <p class="slider__paragraph paragraph paragraph--productSlidePrice">R99.99</p>
-                                          </figure>
-                                    </div>
-                                    <div class="slider__indexContainer">
-                                          <span class="slider__index slider__index--1"></span>
-                                          <span class="slider__index slider__index--2"></span>
-                                          <span class="slider__index slider__index--3"></span>
-                                          <span class="slider__index slider__index--4"></span>
-                                          <span class="slider__index slider__index--5"></span>
-                                    </div>
-                              </div>
-                              <div class="slider__rightArrContainer">
-                                    <svg class="slider__arrow slider__rightArr rightArr" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M9 6L15 12L9 18" stroke="#f5aa15" stroke-width="2"/>
-                                    </svg>
-                              </div> 
-                        </div>
-                        <article class="products__text">
+                  <div class="products__productsContentWrapper">
+                        <article class="products__intro">
                               <h3 class="products__headingH3 headingH3 headingH3--products">About our products</h3>
-                              <!-- <p class="products__paragraph paragraph paragraph--products">At Goldberg Tobacco Wholesalers, 
-                                    we offer an expansive range of smoking essentials, including cigarettes, pipe tobacco, 
-                                    and rolling tobacco. Explore our selection of vape products, featuring premium e-liquids 
-                                    and high-quality vaping devices. Additionally, discover thoughtful gifts suitable for 
-                                    any occasion. With a commitment to excellence, we ensure each product enhances your 
-                                    smoking experience. Visit us today to find everything you need to indulge responsibly 
-                                    and elevate your smoking enjoyment.</p> -->
-                              <button class="btn btn--secondary btn--products">Shop</button>
+                              <p class="products__paragraph paragraph paragraph--products">Welcome to Balance 4 You's 
+                                    product section, where natural wellness meets holistic living. Explore our range 
+                                    of herbal teas, herbs & spices, natural oils, nuts & seeds, and herbal remedies. 
+                                    Find natural pain relief, probiotics, vitamins, and supplements to support your 
+                                    health. Enjoy the benefits of essential oils and natural products, and 
+                                    enhance your home with our eco-friendly solutions. Each product is chosen to 
+                                    help you find balance and harmony.</p>
+                              <button class="products__moreInfoBtn btn btn--secondary btn--products">
+                                    <svg class="btnIcons btnIcons--secondary" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M10.5 12H12V16H14M12 8H12.01M13.5628 20.8633C14.7268 20.658 15.8389 20.2256 16.8357 19.5905C17.8325 18.9555 18.6945 18.1303 19.3724 17.1622C20.0503 16.194 20.5309 15.1018 20.7867 13.948C21.0425 12.7941 21.0685 11.6011 20.8633 10.4372C20.658 9.27322 20.2256 8.1611 19.5905 7.1643C18.9555 6.1675 18.1303 5.30554 17.1622 4.62763C16.194 3.94972 15.1018 3.46914 13.948 3.21334C12.7941 2.95753 11.6011 2.9315 10.4372 3.13673C9.27322 3.34196 8.1611 3.77444 7.1643 4.40948C6.1675 5.04451 5.30554 5.86966 4.62763 6.83781C3.94972 7.80597 3.46914 8.89816 3.21334 10.052C2.95753 11.2059 2.9315 12.3989 3.13673 13.5628C3.34197 14.7268 3.77445 15.8389 4.40948 16.8357C5.04451 17.8325 5.86966 18.6945 6.83781 19.3724C7.80597 20.0503 8.89816 20.5309 10.052 20.7867C11.2059 21.0425 12.3989 21.0685 13.5628 20.8633Z" stroke="#0f0400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    More About Our Products
+                              </button>
+                        </article>
+                        <article class="products__bestsellers">
+                              <h3 class="products__headingH3 headingH3 headingH3--products">Our Best Sellers</h3>
+                              <div class="products__slider slider">
+                                    <div class="slider__leftArrContainer">
+                                          <svg class="slider__arrow slider__leftArr leftArr" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15 6L9 12L15 18" stroke="#f5aa15" stroke-width="2"/>
+                                          </svg>
+                                    </div>
+                                    <div class="slider__slidesAndIndexContainer">
+                                          <div class="slider__slidesContainer">
+                                                <figure class="slider__figure slider__displayBlock">
+                                                      <img class="slider__productImg slider__productImg1" src="/img/WebsiteImages/Balance4YouProducts (1).webp" alt="">
+                                                      <h4 class="slider__headingH4 headingH4 headingH4--productSlideName">Pop Hit Mini</h4>
+                                                      <p class="slider__paragraph paragraph paragraph--productSlidePrice">R69.99</p>
+                                                </figure>
+                                                <figure class="slider__figure slider__displayNone">
+                                                      <img class="slider__productImg slider__productImg2" src="/img/WebsiteImages/Balance4YouProducts (2).webp" alt="">
+                                                      <h4 class="slider__headingH4 headingH4 headingH4--productSlideName">Mini Pod</h4>
+                                                      <p class="slider__paragraph paragraph paragraph--productSlidePrice">R49.99</p>
+                                                </figure>
+                                                <figure class="slider__figure slider__displayNone">
+                                                      <img class="slider__productImg slider__productImg3" src="/img/WebsiteImages/Balance4YouProducts (3).webp" alt="">
+                                                      <h4 class="slider__headingH4 headingH4 headingH4--productSlideName">The Bar S1000</h4>
+                                                      <p class="slider__paragraph paragraph paragraph--productSlidePrice">R89.99</p>
+                                                </figure>
+                                                <figure class="slider__figure slider__displayNone">
+                                                      <img class="slider__productImg slider__productImg4" src="/img/WebsiteImages/Balance4YouProducts (4).webp" alt="">
+                                                      <h4 class="slider__headingH4 headingH4 headingH4--productSlideName">Voom Mini</h4>
+                                                      <p class="slider__paragraph paragraph paragraph--productSlidePrice">R79.99</p>
+                                                </figure>
+                                                <figure class="slider__figure slider__displayNone">
+                                                      <img class="slider__productImg slider__productImg5" src="/img/WebsiteImages/Balance4YouProducts (5).webp" alt="">
+                                                      <h4 class="slider__headingH4 headingH4 headingH4--productSlideName">Pop Hit Extra</h4>
+                                                      <p class="slider__paragraph paragraph paragraph--productSlidePrice">R99.99</p>
+                                                </figure>
+                                                <figure class="slider__figure slider__displayNone">
+                                                      <img class="slider__productImg slider__productImg6" src="/img/WebsiteImages/Balance4YouProducts (6).webp" alt="">
+                                                      <h4 class="slider__headingH4 headingH4 headingH4--productSlideName">Pop Hit Extra</h4>
+                                                      <p class="slider__paragraph paragraph paragraph--productSlidePrice">R99.99</p>
+                                                </figure>
+                                                <figure class="slider__figure slider__displayNone">
+                                                      <img class="slider__productImg slider__productImg7" src="/img/WebsiteImages/Balance4YouProducts (7).webp" alt="">
+                                                      <h4 class="slider__headingH4 headingH4 headingH4--productSlideName">Pop Hit Extra</h4>
+                                                      <p class="slider__paragraph paragraph paragraph--productSlidePrice">R99.99</p>
+                                                </figure>
+                                          </div>
+                                          <div class="slider__indexContainer">
+                                                <span class="slider__index slider__index--1"></span>
+                                                <span class="slider__index slider__index--2"></span>
+                                                <span class="slider__index slider__index--3"></span>
+                                                <span class="slider__index slider__index--4"></span>
+                                                <span class="slider__index slider__index--5"></span>
+                                                <span class="slider__index slider__index--6"></span>
+                                                <span class="slider__index slider__index--7"></span>
+                                          </div>
+                                    </div>
+                                    <div class="slider__rightArrContainer">
+                                          <svg class="slider__arrow slider__rightArr rightArr" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 6L15 12L9 18" stroke="#f5aa15" stroke-width="2"/>
+                                          </svg>
+                                    </div>
+                              </div>
+                              <button class="products__shopOnlineBtn btn btn--secondary">
+                                    <svg class="btnIcons btnIcons--secondary" class="hero__ctaBtnIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M4 4H5.62563C6.193 4 6.47669 4 6.70214 4.12433C6.79511 4.17561 6.87933 4.24136 6.95162 4.31912C7.12692 4.50769 7.19573 4.7829 7.33333 5.33333L7.51493 6.05972C7.616 6.46402 7.66654 6.66617 7.74455 6.83576C8.01534 7.42449 8.5546 7.84553 9.19144 7.96546C9.37488 8 9.58326 8 10 8V8" stroke="#0f0400" stroke-width="2" stroke-linecap="round"/>
+                                          <path d="M18 17H7.55091C7.40471 17 7.33162 17 7.27616 16.9938C6.68857 16.928 6.28605 16.3695 6.40945 15.7913C6.42109 15.7367 6.44421 15.6674 6.49044 15.5287V15.5287C6.54177 15.3747 6.56743 15.2977 6.59579 15.2298C6.88607 14.5342 7.54277 14.0608 8.29448 14.0054C8.3679 14 8.44906 14 8.61137 14H14" stroke="#0f0400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M14.5279 14H10.9743C9.75838 14 9.15042 14 8.68147 13.7246C8.48343 13.6083 8.30689 13.4588 8.15961 13.2825C7.81087 12.8652 7.71092 12.2655 7.51103 11.0662C7.30849 9.85093 7.20722 9.2433 7.44763 8.79324C7.54799 8.60536 7.68722 8.44101 7.85604 8.31113C8.26045 8 8.87646 8 10.1085 8H16.7639C18.2143 8 18.9395 8 19.2326 8.47427C19.5257 8.94854 19.2014 9.59717 18.5528 10.8944L18.1056 11.7889C17.5677 12.8647 17.2987 13.4026 16.8154 13.7013C16.3321 14 15.7307 14 14.5279 14Z" stroke="#0f0400" stroke-width="2" stroke-linecap="round"/>
+                                          <circle cx="17" cy="20" r="1" fill="#0f0400"/>
+                                          <circle cx="9" cy="20" r="1" fill="#0f0400"/>
+                                    </svg>
+                                    Shop Online
+                              </button>
                         </article>
                   </div>
             </section>
@@ -96,7 +140,7 @@
                   <p class="contact__paragraph paragraph paragraph--contactDetailsIntro">Click on the 
                         button below to connect with us via our WhatsApp chat link or email address, 
                         or to get directions to our shop via Google Maps.</p>
-                  <button class="hero__ctaBtn btn btn--secondary">
+                  <button class="contact__contactDetailsBtn btn btn--secondary">
                         <svg class="btnIcons btnIcons--secondary" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M3 6.2C3 5.07989 3 4.51984 3.21799 4.09202C3.40973 3.71569 3.71569 3.40973 4.09202 3.21799C4.51984 3 5.0799 3 6.2 3H17.8C18.9201 3 19.4802 3 19.908 3.21799C20.2843 3.40973 20.5903 3.71569 20.782 4.09202C21 4.51984 21 5.0799 21 6.2V17.8C21 18.9201 21 19.4802 20.782 19.908C20.5903 20.2843 20.2843 20.5903 19.908 20.782C19.4802 21 18.9201 21 17.8 21H6.2C5.07989 21 4.51984 21 4.09202 20.782C3.71569 20.5903 3.40973 20.2843 3.21799 19.908C3 19.4802 3 18.9201 3 17.8V6.2Z" stroke="#0f0400" stroke-width="2" stroke-linecap="round"/>
                               <path d="M19 21L15 6.5" stroke="#0f0400" stroke-width="2"/>

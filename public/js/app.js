@@ -165,7 +165,7 @@ leftArr.addEventListener('click', function() {
 });
 // move index to right 
 function indexLogicRight() {
-  if(counter === 4) {
+  if(counter === 6) {
     counter = 0;
     index[0].style.backgroundColor = '#f5aa15';
     index[index.length - 1].style.backgroundColor = '#011338';
@@ -189,7 +189,7 @@ function indexLogicLeft() {
 };
 // move slides to left
 function moveSlidesToLeft() {
-  if(counter === 4) {
+  if(counter === 6) {
     slides[counter].style.opacity = "0";
     setTimeout(function(){
       slides[counter].classList.toggle("slider__displayNone");

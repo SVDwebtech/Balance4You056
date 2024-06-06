@@ -6,7 +6,7 @@
 }
 .contact {
       @include displayFlexColumn;
-      gap: 3rem;
+      gap: 1rem;
       &__contactContentWrapper {
             @include displayFlexColumn;
             gap: 3rem;
@@ -27,5 +27,9 @@
       &__googleIframe {
             width: min(100%, 45rem);
             height: min(65vw, 28rem);
+      }
+      &__contactDetailsBtn {
+            @include displayFlexRow;
+            gap: .5rem;
       }
 }

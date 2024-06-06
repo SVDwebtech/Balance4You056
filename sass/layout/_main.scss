@@ -1,3 +1,39 @@
 .main {
+      @include displayFlexColumn;
+      gap: 5rem;
       padding: 0 2rem;
+}
+.about, .products {
+      @include displayFlexColumn;
+      gap: 3rem;
+      width: min(100%, 45rem);
+}
+.about {
+      &__article, &__figure, &__cta {
+            @include displayFlexColumn;
+            gap: 2rem;
+      }
+      &__grid-container {
+            margin: 1rem 0 .75rem;
+      }
+      &__ctaBtn {
+            @include displayFlexRow;
+            gap: .5rem;
+      }
+}
+.products {
+      &__productsContentWrapper {
+            @include displayFlexColumn;
+            gap: 3rem;
+      }
+      &__intro, &__bestsellers {
+            @include displayFlexColumn;
+            align-items: stretch;
+            gap: 1rem;
+            width: 100%;
+      }
+      &__moreInfoBtn, &__shopOnlineBtn {
+            @include displayFlexRow;
+            gap: .5rem;
+      }
 }

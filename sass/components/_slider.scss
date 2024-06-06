@@ -1,9 +1,10 @@
 .slider {
       @include displayFlexRow;
-      justify-content: space-between;
+      justify-content:space-between;
       align-items: center;
       width: 100%;
-      min-height: 36rem;
+      min-height: 33rem;
+      margin: 1.5rem 0 0;
       padding: 0 1rem;
       position: relative;
       &__arrow {
@@ -26,7 +27,7 @@
             z-index: -500;
       }
       &__slidesContainer {
-            min-height: 30rem;
+            min-height: 25rem;
             position: relative;
       }
       &__figure {
@@ -38,7 +39,7 @@
       }
       &__productImg {
             display: block;
-            width: 24rem;
+            width: 23rem;
             height: auto;
       }
       &__indexContainer {
