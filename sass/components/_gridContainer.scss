@@ -1,0 +1,44 @@
+.grid-container {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(12, 1fr);
+      gap: .5rem;
+      border: 2px solid $dark;
+      box-shadow: 0 0 55px 2px rgba($dark, .45);
+      width: 100%;
+      max-width: 800px; /* Adjust as needed */
+      margin: 0 auto;
+      padding: .5rem;
+}
+.grid-container--homeAbout {
+grid-template-rows: repeat(2, 1fr);
+height: 50vw;
+}
+.grid-item {
+position: relative;
+overflow: hidden;
+}
+.grid-item img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+/* Adjust based on number of photos */
+.photo1--homeAbout {
+grid-column-start: 7;
+grid-column-end: -1;
+grid-row-start: 1;
+grid-row-end: 2;
+}
+.photo2--homeAbout {
+grid-column: 7 / -1;
+grid-row-start: 2;
+grid-row-end: 3;
+}
+.photo3--homeAbout {
+grid-column-start: 1;
+grid-column-end: 7;
+grid-row-start: 1;
+grid-row-end: 3;
+}
+  
