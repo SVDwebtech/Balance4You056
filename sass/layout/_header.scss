@@ -44,8 +44,10 @@
 }
 
 .primaryHeading {
+      margin-top: -11rem;
       &__hr {
-            background: linear-gradient(to right, rgba($dark, .35), rgba($goldenrod-yellow, 1) 20%, rgba($goldenrod-yellow, 1) 80%, rgba($dark, .35));
+            // background: linear-gradient(to right, rgba($dark, .35), rgba($goldenrod-yellow, 1) 20%, rgba($goldenrod-yellow, 1) 80%, rgba($dark, .35));
+            background-color: transparent;
             height: 2px;
             border: none;
             margin: .75rem 0 .25rem;
@@ -56,7 +58,7 @@
       }
       &__spacer {
             display: inline-block;
-            background-color: $goldenrod-yellow;
+            background-color: transparent;
             border-radius: 50%;
             height: 5px;
             width: 5px;
