@@ -263,12 +263,72 @@ body {
 }
 
 .headingH4 {
-  font-size: clamp(1.6rem, 6vw, 1.8rem);
+  font-size: clamp(1.4rem, 5vw, 1.6rem);
+}
+.headingH4--productName {
+  color: #efefef;
+  font-family: "Lato", Helvetica, Arial, "Segoe UI", sans-serif;
+  font-size: clamp(1.2rem, 4.5vw, 1.4rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  text-shadow: 1px 1px #0f0400;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+
+.headingH5 {
+  font-family: "Lato", Helvetica, Arial, "Segoe UI", sans-serif;
+  font-size: clamp(1.4rem, 5.5vw, 1.6rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+.headingH5--productCategoryHeading {
+  color: #efefef;
+  font-size: clamp(1.8rem, 6vw, 2rem);
+  font-weight: 900;
+  text-shadow: 1px 1px #0f0400;
+}
+.headingH5--productCategoryName {
+  color: #023c87;
+  font-style: italic;
+  font-weight: 700;
+  text-shadow: 1px 1px #efefef;
+}
+.headingH5--productPropertiesHeading, .headingH5--productApplicationsHeading {
+  color: #023c87;
+  font-family: "Lato", Helvetica, Arial, "Segoe UI", sans-serif;
+  font-style: italic;
+  font-size: clamp(1.6rem, 5.5vw, 1.8rem);
+  font-weight: 700;
+  text-shadow: 1px 1px #efefef;
+  line-height: 1;
+  letter-spacing: 3px;
 }
 
 .paragraph--cta {
   display: block;
   color: #f2d297;
+}
+.paragraph--productPrice {
+  color: #efefef;
+  font-family: "Lato", Helvetica, Arial, "Segoe UI", sans-serif;
+  font-size: clamp(1.1rem, 4.5vw, 1.3rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  text-shadow: 1px 1px #0f0400;
+  line-height: 1;
+  letter-spacing: 3px;
+}
+.paragraph--productProperties {
+  color: rgba(239, 239, 239, 0.95);
+  font-family: "Lato", Helvetica, Arial, "Segoe UI", sans-serif;
+  font-size: clamp(1rem, 4.5vw, 1.2rem);
+  font-weight: 700;
+  text-shadow: 1px 1px #0f0400;
+  text-transform: capitalize;
+  line-height: 1.6;
+  letter-spacing: 1px;
 }
 .paragraph--contactDetailContact {
   line-height: 1.2;
@@ -464,6 +524,11 @@ body {
   height: auto;
 }
 
+.listIcons {
+  width: 2rem;
+  height: 2rem;
+}
+
 .logo__figure {
   display: flex;
   flex-direction: row;
@@ -642,8 +707,8 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  min-height: 33rem;
-  margin: 1.5rem 0 0;
+  min-height: 50rem;
+  margin: 2rem 0 0;
   padding: 0 1rem;
   position: relative;
 }
@@ -653,9 +718,15 @@ body {
   height: auto;
 }
 .slider__leftArr, .slider__rightArr {
-  background-color: #1b1513;
-  border-radius: 100%;
-  padding: 0.25rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.slider__leftArr {
+  left: -6%;
+}
+.slider__rightArr {
+  right: -6%;
 }
 .slider__slidesAndIndexContainer {
   display: flex;
@@ -664,13 +735,23 @@ body {
   align-items: center;
   gap: 1rem;
   gap: 2rem;
+  width: 88%;
   position: absolute;
   top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: -500;
+  z-index: 500;
 }
 .slider__slidesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  background: linear-gradient(165deg, rgba(239, 239, 239, 0.85) 35%, rgba(65, 148, 24, 0.75) 70%, rgba(15, 4, 0, 0.65) 95%), linear-gradient(180deg, rgba(239, 239, 239, 0.95) 45%, #419418 75%, rgba(15, 4, 0, 0.65));
+  border: 1px solid #898989;
+  box-shadow: 0px 0px 25px 2px rgba(15, 4, 0, 0.45);
   min-height: 25rem;
   position: relative;
 }
@@ -680,15 +761,71 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  border: 1px solid #1b1513;
-  box-shadow: 0 0 12px 2px rgba(27, 21, 19, 0.25);
-  padding: 1rem;
+  justify-content: space-evenly;
+  position: relative;
   transition: opacity 1s;
+  width: 100%;
+}
+.slider__productHeadingContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 0rem;
+  background-color: #ddad00;
+  border: 1px solid #0f0400;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 12px 3px rgba(15, 4, 0, 0.75);
+  width: max-content;
+  padding: 0.75rem 2.5rem 0.5rem;
+  position: absolute;
+  top: 75vw;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (min-width: 320px) {
+  .slider__productHeadingContainer {
+    top: 76vw;
+  }
+}
+@media (min-width: 340px) {
+  .slider__productHeadingContainer {
+    top: 77vw;
+  }
+}
+.slider__headingH4 {
+  margin-bottom: 0.25rem;
+}
+.slider__productDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: rem;
+  padding: 1rem;
+  margin-top: 1.75rem;
+}
+.slider__paragraph {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+}
+.slider__headingH5 {
+  margin-bottom: 0.5rem;
 }
 .slider__productImg {
   display: block;
-  width: 23rem;
+  background: linear-gradient(180deg, #efefef 15%, rgba(187, 187, 187, 0.85) 70%, rgba(15, 4, 0, 0.5)), linear-gradient(180deg, #efefef 75%, rgba(15, 4, 0, 0.65));
+  width: 100%;
   height: auto;
+  padding-bottom: 2rem;
 }
 .slider__indexContainer {
   display: flex;
@@ -706,41 +843,6 @@ body {
 }
 .slider__index--1 {
   background-color: #ddad00;
-}
-@media (min-width: 56.25em) {
-  .slider {
-    flex: 1 0 30rem;
-    min-height: 30rem;
-  }
-  .slider__arrow {
-    margin-bottom: 15rem;
-  }
-  .slider__productImg {
-    width: 18rem;
-  }
-  .slider__slidesAndIndexContainer {
-    top: 30%;
-    height: 30rem;
-  }
-  .slider__slidesContainer {
-    min-height: 26rem;
-  }
-}
-@media (min-width: 75em) {
-  .slider__arrow {
-    margin-bottom: 8rem;
-  }
-  .slider__slidesAndIndexContainer {
-    top: 43%;
-  }
-}
-@media (min-width: 112.5em) {
-  .slider__arrow {
-    margin-bottom: 0rem;
-  }
-  .slider__slidesAndIndexContainer {
-    top: 55%;
-  }
 }
 
 .slider__animateRemoveSlideToLeft {
@@ -764,7 +866,7 @@ body {
 }
 
 .slider__displayBlock {
-  display: block;
+  display: flex;
 }
 
 .sidebar {
@@ -1009,7 +1111,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  align-items: stretch;
+  align-items: center;
   gap: 1rem;
   width: 100%;
 }

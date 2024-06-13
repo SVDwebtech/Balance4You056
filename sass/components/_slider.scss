@@ -3,8 +3,8 @@
       justify-content:space-between;
       align-items: center;
       width: 100%;
-      min-height: 33rem;
-      margin: 1.5rem 0 0;
+      min-height: 50rem;
+      margin: 2rem 0 0;
       padding: 0 1rem;
       position: relative;
       &__arrow {
@@ -13,34 +13,95 @@
             height: auto;
       }
       &__leftArr, &__rightArr {
-            background-color: $licorice-black;
-            border-radius: $br-circle;
-            padding: .25rem;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            // background-color: $licorice-black;
+            // border-radius: $br-circle;
+            // padding: .25rem;
+      }
+      &__leftArr {
+            left: -6%;
+      }
+      &__rightArr {
+            right: -6%;
       }
       &__slidesAndIndexContainer {
             @include displayFlexColumn;
             gap: 2rem;
+            width: 88%;
             position: absolute;
             top: 48%;
             left: 50%;
             transform: translate(-50%, -50%);
-            z-index: -500;
+            z-index: 500;
       }
       &__slidesContainer {
+            @include displayFlexColumn;
+            justify-content: space-between;
+            background: 
+                  linear-gradient(165deg, rgba($white, .85) 35%, rgba($forest-green, .75) 70%, rgba($dark, .65) 95%),
+                  linear-gradient(180deg, rgba($white, .95) 45%, rgba($forest-green, 1) 75%, rgba($dark, .65));
+            border: 1px solid $grey;
+            box-shadow: 0px 0px 25px 2px rgba($dark, .45);
             min-height: 25rem;
             position: relative;
       }
       &__figure {
             @include displayFlexColumn;
-            border: 1px solid $licorice-black;
-            box-shadow: 0 0 12px 2px rgba($licorice-black, .25);
-            padding: 1rem;
+            justify-content: space-evenly;
+            position: relative;
             transition: opacity 1s;
+            width: 100%;
+      }
+      &__productHeadingContainer {
+            @include displayFlexColumn;
+            gap: 0rem;
+            // background: linear-gradient(to bottom right, rgba($goldenrod-yellow, .95) 45%, rgba($goldenrod-yellow, .35) 98%),
+            //             linear-gradient(to bottom right, rgba($goldenrod-yellow, .95) 45%, rgba($dark, 1) 99%);
+            background-color: $goldenrod-yellow;
+            border: 1px solid $dark;
+            border-radius: $br-m;
+            box-shadow: 0px 0px 12px 3px rgba($dark, .75);
+            width: max-content;
+            padding: .75rem 2.5rem .5rem;
+            position: absolute;
+            top: 75vw;
+            left: 50%;
+            transform: translateX(-50%);
+            @media (min-width: 320px) {
+                  top: 76vw;
+            }
+            @media (min-width: 340px) {
+                  top: 77vw;
+            }
+      }
+      &__headingH4 {
+            margin-bottom: .25rem;
+      }
+      &__productDetailsContainer {
+            @include displayFlexColumn;
+            gap: rem;
+            padding: 1rem;
+            margin-top: 1.75rem;
+      }
+      &__paragraph {
+            @include displayFlexRow;
+            justify-content: center;
+            align-items: center;
+            gap: .25rem;
+      }
+      &__headingH5 {
+            margin-bottom: .5rem;
       }
       &__productImg {
             display: block;
-            width: 23rem;
+            // background: linear-gradient(to bottom right, rgba($dark, .95) 5%, rgba($yale-blue, 1) 65%, rgba($dark, .9) 95%);
+            background: linear-gradient(180deg, rgba($white, 1) 15%, rgba($light-grey, .85) 70%, rgba($dark, .50)),
+                        linear-gradient(180deg, rgba($white, 1) 75%, rgba($dark, .65));
+            width: 100%;
             height: auto;
+            padding-bottom: 2rem;
       }
       &__indexContainer {
             @include displayFlexRow;
@@ -55,39 +116,39 @@
       &__index--1 {
             background-color: $goldenrod-yellow;
       }
-      @include respond(tab-land) {
-            flex: 1 0 30rem;
-            min-height: 30rem;
-            &__arrow {
-                  margin-bottom: 15rem;
-            }
-            &__productImg {
-                  width: 18rem;
-            }
-            &__slidesAndIndexContainer {
-                  top: 30%;
-                  height: 30rem;
-            }
-            &__slidesContainer {
-                  min-height: 26rem;
-            }
-      }
-      @include respond(desk) {
-            &__arrow {
-                  margin-bottom: 8rem;
-            }
-            &__slidesAndIndexContainer {
-                  top: 43%;
-            }
-      }
-      @include respond(big-desk) {
-            &__arrow {
-                  margin-bottom: 0rem;
-            }
-            &__slidesAndIndexContainer {
-                  top: 55%;
-            }
-      }
+      // @include respond(tab-land) {
+      //       flex: 1 0 30rem;
+      //       min-height: 30rem;
+      //       &__arrow {
+      //             margin-bottom: 15rem;
+      //       }
+      //       &__productImg {
+      //             width: 18rem;
+      //       }
+      //       &__slidesAndIndexContainer {
+      //             top: 30%;
+      //             height: 30rem;
+      //       }
+      //       &__slidesContainer {
+      //             min-height: 26rem;
+      //       }
+      // }
+      // @include respond(desk) {
+      //       &__arrow {
+      //             margin-bottom: 8rem;
+      //       }
+      //       &__slidesAndIndexContainer {
+      //             top: 43%;
+      //       }
+      // }
+      // @include respond(big-desk) {
+      //       &__arrow {
+      //             margin-bottom: 0rem;
+      //       }
+      //       &__slidesAndIndexContainer {
+      //             top: 55%;
+      //       }
+      // }
 }
 .slider__animateRemoveSlideToLeft {
       animation: animateRemoveSlideToLeft 1.5s;
@@ -105,5 +166,5 @@
       display: none;
 }
 .slider__displayBlock {
-      display: block;
+      display: flex;
 }

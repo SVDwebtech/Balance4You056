@@ -100,12 +100,71 @@ body {
 	letter-spacing: 1px;
 }
 .headingH4 {
-	font-size: clamp(1.6rem, 6vw, 1.8rem);
+	font-size: clamp(1.4rem, 5vw, 1.6rem);
+	&--productName {
+		color: $white;
+		font-family: 'Lato', Helvetica, Arial, 'Segoe UI', sans-serif;
+		font-size: clamp(1.2rem, 4.5vw, 1.4rem);
+		font-weight: 900;
+		text-transform: uppercase;
+		text-shadow: 1px 1px $dark;
+		line-height: 1;
+		letter-spacing: 1px;
+	}
+}
+.headingH5 {
+	font-family: 'Lato', Helvetica, Arial, 'Segoe UI', sans-serif;
+	font-size: clamp(1.4rem, 5.5vw, 1.6rem);
+	font-weight: 700;
+	line-height: 1;
+	letter-spacing: 1px;
+	&--productCategoryHeading {
+		color: $white;
+		font-size: clamp(1.8rem, 6vw, 2rem);
+		font-weight: 900;
+		text-shadow: 1px 1px $dark;
+	}
+	&--productCategoryName {
+		color: $yale-blue;
+		font-style: italic;
+		font-weight: 700;
+		text-shadow: 1px 1px $white;
+	}
+	&--productPropertiesHeading, &--productApplicationsHeading {
+		color: $yale-blue;
+		font-family: 'Lato', Helvetica, Arial, 'Segoe UI', sans-serif;
+		font-style: italic;
+		font-size: clamp(1.6rem, 5.5vw, 1.8rem);
+		font-weight: 700;
+		text-shadow: 1px 1px $white;
+		line-height: 1;
+		letter-spacing: 3px;
+	}
 }
 .paragraph {
 	&--cta {
 		display: block;
 		color: $sunset-cream;
+	}
+	&--productPrice {
+		color: $white;
+		font-family: 'Lato', Helvetica, Arial, 'Segoe UI', sans-serif;
+		font-size: clamp(1.1rem, 4.5vw, 1.3rem);
+		font-weight: 900;
+		text-transform: uppercase;
+		text-shadow: 1px 1px $dark;
+		line-height: 1;
+		letter-spacing: 3px;
+	}
+	&--productProperties {
+		color: rgba($white, .95);
+		font-family: 'Lato', Helvetica, Arial, 'Segoe UI', sans-serif;
+		font-size: clamp(1rem, 4.5vw, 1.2rem);
+		font-weight: 700;
+		text-shadow: 1px 1px $dark;
+		text-transform: capitalize;
+		line-height: 1.6;
+		letter-spacing: 1px;
 	}
 	&--contactDetailContact {
 		line-height: 1.2;
