@@ -1012,8 +1012,8 @@ body {
   background: linear-gradient(to bottom, #0f0400 3%, transparent 30%), linear-gradient(to top, #0f0400 3%, transparent 30%), linear-gradient(to right, #0f0400 3%, transparent 50%), linear-gradient(to left, #0f0400 3%, transparent 50%), url("/img/WebsiteImages/Balance4YouDarkWoodHeroBackGroundPatternLandscape.webp");
   background-size: 150%;
   background-position: top;
-  height: 95vh;
-  padding: 5rem 2rem 0rem;
+  height: max-content;
+  padding: 5rem 2rem;
   position: relative;
 }
 .header__heroOther {
