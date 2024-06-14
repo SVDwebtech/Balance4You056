@@ -230,15 +230,15 @@ body {
 }
 
 .headingH2 {
-  color: #ddad00;
-  font-family: "Antonio", Oswald, Verdana, sans-serif;
+  color: #f2d297;
+  font-family: "Gagalin", Impact, "Arial Black", sans-serif;
   font-size: clamp(2.6rem, 7vw, 2.8rem);
-  font-weight: 900;
+  font-weight: 400;
   text-shadow: 1px 1px #0f0400;
   text-transform: uppercase;
   line-height: 1.2;
   letter-spacing: 3px;
-  text-decoration: underline solid 3px;
+  text-decoration: underline solid 2px;
   text-underline-offset: 3px;
 }
 .headingH2--subpage {
