@@ -146,6 +146,8 @@ body {
 	&--cta {
 		display: block;
 		color: $sunset-cream;
+		font-weight: 700;
+		text-shadow: 1px 1px $dark;
 	}
 	&--productPrice {
 		color: $white;

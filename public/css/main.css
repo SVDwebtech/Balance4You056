@@ -310,6 +310,8 @@ body {
 .paragraph--cta {
   display: block;
   color: #f2d297;
+  font-weight: 700;
+  text-shadow: 1px 1px #0f0400;
 }
 .paragraph--productPrice {
   color: #efefef;
