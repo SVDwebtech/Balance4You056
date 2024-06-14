@@ -10,8 +10,13 @@
             background-size: 150%;
             background-position: top;
             height: max-content;
-            padding: 5rem 2rem;
+            padding: 10rem 2rem 12rem;
             position: relative;
+            @include respond(tab-land) {
+                  @include displayFlexRow;
+                  gap: 5rem;
+                  padding: 5rem 2rem 7rem;
+            }
       }
       &__heroOther {
             height: auto;
@@ -28,18 +33,28 @@
       }
       &__logoImg {
             display: block;
-            width: 23rem;
+            width: 25rem;
             height: auto;
             margin: 0 auto;
       }
       &__cta {
             @include displayFlexColumn;
-            gap: 1.5rem;
+            gap: 1.75rem;
             width: 26rem;
       }
       &__ctaBtn {
             @include displayFlexRow;
             gap: .5rem;
+      }
+      @include respond(tab-port) {
+            &__logoImg {
+                  width: 30rem;
+            }
+      }
+      @include respond(tab-land) {
+            &__logoImg {
+                  width: 35rem;
+            }
       }
 }
 
