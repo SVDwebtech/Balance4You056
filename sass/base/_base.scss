@@ -20,17 +20,18 @@ html {
 	@include respond(tab-land) {
 	/*   	tap-land 900px --> 1200px */
 	/* 	13px / 16px *100 = 81.25% */
-		font-size: 75%; // 1rem = 13px 
+		font-size: 70%; // 1rem = 13px 
 	}
 	@include respond(desk) {
 	/*   	desk 1200px --> 1800px */
 	/* 	16px / 16px *100 = 100.00% */
-		font-size: 100%; // 1rem = 16px 
+		// font-size: 100%; // 1rem = 16px 
+		font-size: 80%; // 1rem = 16px 
 	}
 	@include respond(big-desk) {
 	/*   	big-desk 1800px + */
 	/* 	18px / 16px *100 = 112.50% */
-		font-size: 93.75%; // 1rem = 18px
+		font-size: 90%; // 1rem = 18px
 	}
 }
 
