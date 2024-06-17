@@ -2,14 +2,14 @@
       @include displayFlexRow;
       justify-content:space-between;
       align-items: center;
-      width: 100%;
-      min-height: 50rem;
+      width: min(100%, 35rem);
+      height: 30rem;
       margin: 2rem 0 0;
       padding: 0 1rem;
       position: relative;
       &__arrow {
             display: block;
-            width: 3rem;
+            width: 4rem;
             height: auto;
       }
       &__leftArr, &__rightArr {
@@ -28,8 +28,9 @@
       }
       &__slidesAndIndexContainer {
             @include displayFlexColumn;
+            align-items: stretch;
             gap: 2rem;
-            width: 88%;
+            width: min(88%, 28rem);
             position: absolute;
             top: 48%;
             left: 50%;
@@ -59,22 +60,16 @@
             gap: 0rem;
             // background: linear-gradient(to bottom right, rgba($goldenrod-yellow, .95) 45%, rgba($goldenrod-yellow, .35) 98%),
             //             linear-gradient(to bottom right, rgba($goldenrod-yellow, .95) 45%, rgba($dark, 1) 99%);
-            background-color: $goldenrod-yellow;
-            border: 1px solid $dark;
+            background-color: $yale-blue;
+            border: 1px solid $light-grey;
             border-radius: $br-m;
             box-shadow: 0px 0px 12px 3px rgba($dark, .75);
             width: max-content;
-            padding: .75rem 2.5rem .5rem;
+            padding: .75rem 1rem;
             position: absolute;
-            top: 75vw;
+            top: 11.5rem;
             left: 50%;
             transform: translateX(-50%);
-            @media (min-width: 320px) {
-                  top: 76vw;
-            }
-            @media (min-width: 340px) {
-                  top: 77vw;
-            }
       }
       &__headingH4 {
             margin-bottom: .25rem;
@@ -82,8 +77,8 @@
       &__productDetailsContainer {
             @include displayFlexColumn;
             gap: rem;
-            padding: 1rem;
-            margin-top: 1.75rem;
+            padding: 1rem 1rem 1.5rem;
+            margin-top: 2.5rem;
       }
       &__paragraph {
             @include displayFlexRow;
@@ -94,13 +89,21 @@
       &__headingH5 {
             margin-bottom: .5rem;
       }
-      &__productImg {
-            display: block;
-            // background: linear-gradient(to bottom right, rgba($dark, .95) 5%, rgba($yale-blue, 1) 65%, rgba($dark, .9) 95%);
+      &__productImgContainer {
+            @include displayFlexColumn;
+            justify-content: flex-start;
             background: linear-gradient(180deg, rgba($white, 1) 15%, rgba($light-grey, .85) 70%, rgba($dark, .50)),
                         linear-gradient(180deg, rgba($white, 1) 75%, rgba($dark, .65));
             width: 100%;
-            height: auto;
+            height: 15rem;
+      }
+      &__productImg {
+            display: block;
+            // background: linear-gradient(to bottom right, rgba($dark, .95) 5%, rgba($yale-blue, 1) 65%, rgba($dark, .9) 95%);
+            // background: linear-gradient(180deg, rgba($white, 1) 15%, rgba($light-grey, .85) 70%, rgba($dark, .50)),
+            //             linear-gradient(180deg, rgba($white, 1) 75%, rgba($dark, .65));
+            width: auto;
+            height: 90%;
             padding-bottom: 2rem;
       }
       &__indexContainer {

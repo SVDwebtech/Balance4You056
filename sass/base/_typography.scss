@@ -102,15 +102,25 @@ body {
 }
 .headingH4 {
 	font-size: clamp(1.4rem, 5vw, 1.6rem);
+	&--productBrandAndName {
+		color: $white;
+		font-family: 'Lato', Helvetica, Arial, 'Segoe UI', sans-serif;
+		font-size: clamp(1rem, 5vw, 1.4rem);
+		font-weight: 700;
+		text-transform: capitalize;
+		text-shadow: 1px 1px $dark;
+		line-height: 1.2;
+		letter-spacing: 0px;
+	}
 	&--productName {
 		color: $white;
 		font-family: 'Lato', Helvetica, Arial, 'Segoe UI', sans-serif;
-		font-size: clamp(1.2rem, 4.5vw, 1.4rem);
+		font-size: clamp(1.2rem, 5vw, 1.8rem);
 		font-weight: 900;
 		text-transform: uppercase;
 		text-shadow: 1px 1px $dark;
-		line-height: 1;
-		letter-spacing: 1px;
+		line-height: 1.2;
+		letter-spacing: 0px;
 	}
 }
 .headingH5 {
@@ -131,16 +141,16 @@ body {
 		font-weight: 700;
 		text-shadow: 1px 1px $white;
 	}
-	&--productPropertiesHeading, &--productApplicationsHeading {
-		color: $yale-blue;
-		font-family: 'Lato', Helvetica, Arial, 'Segoe UI', sans-serif;
-		font-style: italic;
-		font-size: clamp(1.6rem, 5.5vw, 1.8rem);
-		font-weight: 700;
-		text-shadow: 1px 1px $white;
-		line-height: 1;
-		letter-spacing: 3px;
-	}
+	// &--productPropertiesHeading, &--productApplicationsHeading {
+	// 	color: $yale-blue;
+	// 	font-family: 'Lato', Helvetica, Arial, 'Segoe UI', sans-serif;
+	// 	font-style: italic;
+	// 	font-size: clamp(1.6rem, 5.5vw, 1.8rem);
+	// 	font-weight: 700;
+	// 	text-shadow: 1px 1px $white;
+	// 	line-height: 1;
+	// 	letter-spacing: 3px;
+	// }
 }
 .paragraph {
 	&--cta {
@@ -152,22 +162,22 @@ body {
 	&--productPrice {
 		color: $white;
 		font-family: 'Lato', Helvetica, Arial, 'Segoe UI', sans-serif;
-		font-size: clamp(1.1rem, 4.5vw, 1.3rem);
-		font-weight: 900;
+		font-size: clamp(1.2rem, 4.5vw, 1.4rem);
+		font-weight: 700;
 		text-transform: uppercase;
 		text-shadow: 1px 1px $dark;
 		line-height: 1;
-		letter-spacing: 3px;
+		letter-spacing: 1px;
 	}
-	&--productProperties {
+	&--productQualities {
 		color: rgba($white, .95);
 		font-family: 'Lato', Helvetica, Arial, 'Segoe UI', sans-serif;
-		font-size: clamp(1rem, 4.5vw, 1.2rem);
+		font-size: clamp(.8rem, 3.8vw, 1.4rem);
 		font-weight: 700;
 		text-shadow: 1px 1px $dark;
 		text-transform: capitalize;
 		line-height: 1.6;
-		letter-spacing: 1px;
+		letter-spacing: 0px;
 	}
 	&--contactDetailContact {
 		line-height: 1.2;
