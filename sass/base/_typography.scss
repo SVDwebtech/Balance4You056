@@ -50,7 +50,7 @@ body {
 .primaryHeading {
 	&__title, &__subtitle {
 		display: block;
-		color: transparent;
+		color: $sunset-cream;
 		font-family: 'Gagalin', Impact, 'Arial Black', sans-serif;
 		font-weight: 400;
 		line-height: 1;
@@ -65,7 +65,7 @@ body {
 	}
 	&__byline {
 		display: block;
-		color: transparent;
+		color: $goldenrod-yellow;
 		font-family: 'Antonio', Oswald, Verdana, sans-serif;
 		font-size: clamp(1.4rem, 4.6vw, 1.6rem);
 		font-weight: 400;

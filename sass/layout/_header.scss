@@ -48,20 +48,20 @@
       }
       @include respond(tab-port) {
             &__logoImg {
-                  width: 30rem;
+                  width: 26rem;
             }
       }
       @include respond(tab-land) {
             &__logoImg {
-                  width: 35rem;
+                  width: 24rem;
             }
       }
 }
 
 .primaryHeading {
-      margin-top: -11rem;
+      margin-top: 0rem;
       &__hr {
-            // background: linear-gradient(to right, rgba($dark, .35), rgba($goldenrod-yellow, 1) 20%, rgba($goldenrod-yellow, 1) 80%, rgba($dark, .35));
+            background: linear-gradient(to right, rgba($dark, .35), rgba($goldenrod-yellow, 1) 20%, rgba($goldenrod-yellow, 1) 80%, rgba($dark, .35));
             background-color: transparent;
             height: 2px;
             border: none;
@@ -73,7 +73,7 @@
       }
       &__spacer {
             display: inline-block;
-            background-color: transparent;
+            background-color: $goldenrod-yellow;
             border-radius: 50%;
             height: 5px;
             width: 5px;
