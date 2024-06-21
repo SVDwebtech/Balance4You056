@@ -42,6 +42,9 @@ body {
 	font-weight: 400;
 	text-align: center;
 	line-height: 1.6;
+	@include respond(tab-land) {
+		text-align: left;
+	}
 }
 
 .primaryHeading {
@@ -90,6 +93,9 @@ body {
 		font-size: clamp(2.8rem, 7.5vw, 3rem);
 		text-decoration: none;
 	}
+	@include respond(tab-land) {
+		font-size: clamp(2.8rem, 7vw, 3rem);
+	}
 }
 .headingH3 {
 	color: $yale-blue;
@@ -122,6 +128,17 @@ body {
 		line-height: 1.2;
 		letter-spacing: 0px;
 	}
+	&--figureShopImg, &--googleMapsContainer {
+		color: $licorice-black;
+		font-family: 'Lato', Helvetica, Arial, 'Segoe UI', sans-serif;
+		font-size: clamp(1.6rem, 6vw, 1.8rem);
+		font-weight: 900;
+		text-align: left;
+		text-transform: uppercase;
+		text-shadow: 1px 1px $white;
+		line-height: 1;
+		letter-spacing: 3px;
+	}
 }
 .headingH5 {
 	font-family: 'Lato', Helvetica, Arial, 'Segoe UI', sans-serif;
@@ -153,6 +170,16 @@ body {
 	// }
 }
 .paragraph {
+	&--headingH2Container {
+		color: $sunset-cream;
+		font-size: clamp(1.1rem, 3.5vw, 1.3rem);
+		text-shadow: 1px 1px $dark;
+		line-height: 1.1;
+		@include respond(tab-land) {
+			font-size: clamp(1.3rem, 3.5vw, 1.5rem);
+			text-align: center;
+		}
+	}
 	&--cta {
 		display: block;
 		color: $sunset-cream;
@@ -179,12 +206,29 @@ body {
 		line-height: 1.6;
 		letter-spacing: 0px;
 	}
+	&--figureShopImg, &--googleMapsContainer {
+		color: $licorice-black;
+		font-family: 'Lato', Helvetica, Arial, 'Segoe UI', sans-serif;
+		font-size: clamp(1.2rem, 4.5vw, 1.4rem);
+		font-weight: 700;
+		text-align: left;
+		text-transform: capitalize;
+		text-shadow: 1px 1px $white;
+		line-height: 1.2;
+		letter-spacing: 1px;
+	}
 	&--contactDetailContact {
 		line-height: 1.2;
+		@include respond(tab-land) {
+			text-align: left;
+		}
 	}
 	&--contactDetailFooter, &--copy, &--dev {
 		color: $sunset-cream;
 		line-height: 1.2;
+	}
+	&--contactDetailFooterAddress {
+		text-align: justify;
 	}
 	&--devName {
 		color: $forest-green;

@@ -1,19 +1,37 @@
 .headingH2Container {
       @include displayFlexColumn;
-      gap: .25rem;
+      gap: 0rem;
       background: url("/img/WebsiteImages/Balance4YouDarkWoodHeroBackGroundPatternLandscape.webp");
-      background-position: bottom;
+      background-position: center;
       background-repeat: no-repeat;
-      background-size: cover;
-      clip-path: polygon(0 0, 94% 0, 94% 26%, 90% 26%, 90% 50%, 97% 50%, 97% 75%, 93% 75%, 93% 100%, 4% 100%, 4% 75%, 8% 75%, 8% 50%, 0% 50%, 0% 25%, 3% 25%, 3% 0%);
-      padding: 2rem 2rem;
+      background-size: 45rem;
+      clip-path: polygon(0% 2%, 100% 2%, 100% 24%, 92% 24%, 92% 49%, 97% 49%, 97% 70%, 93% 70%, 93% 93%, 4% 93%, 4% 70%, 8% 70%, 8% 49%, 4% 49%, 4% 24%, 0% 24%, 0% 2%);
+      padding: 2rem 0rem;
       width: 100%;
-      height: 14rem;
+      height: 19rem;
       &__img {
             display: block;
-            width: 15rem;
+            width: 14rem;
             height: auto;
       }
+      &__headingH2 {
+            margin-bottom: .25rem;
+      }
+      &__paragraph {
+            width: min(80%, 28rem);
+      }
+      @media (min-width: 500px) {
+            background-size: 55rem;
+            clip-path: polygon(0% 2%, 100% 2%, 100% 18%, 92% 18%, 92% 49%, 97% 49%, 97% 75%, 93% 75%, 93% 93%, 4% 93%, 4% 75%, 8% 75%, 8% 48%, 4% 48%, 4% 18%, 0% 18%, 0% 2%);
+      }
+      @include respond(tab-land) {
+            background-size: 80rem;
+            clip-path: polygon(0 0, 100% 0, 100% 19%, 92% 19%, 92% 49%, 96% 49%, 96% 75%, 89% 75%, 89% 97%, 7% 97%, 7% 75%, 13% 75%, 13% 48%, 9% 48%, 9% 19%, 0% 19%, 0% 0%);
+            height: 28rem;
+            &__img {
+                  width: 25rem;
+            }
+      };
 }
 .headingH2ContainerWrapper {
       filter: drop-shadow(3px 10px 6px rgba($dark, 0.75));
