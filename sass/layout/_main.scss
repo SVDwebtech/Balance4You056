@@ -6,15 +6,21 @@
 .about, .products {
       @include displayFlexColumn;
       gap: 3rem;
-      width: min(100%, 45rem);
+      width: min(100%, 55rem);
       @include respond(tab-land) {
-            width: min(100%, 75rem);
+            width: min(100%, 85rem);
       }
 }
 .about {
       &__article, &__figure, &__cta {
             @include displayFlexColumn;
             gap: 2rem;
+      }
+      &__article {
+            padding: 0 5rem;
+            @include respond(tab-land) {
+                  padding: 0 10rem;
+            }
       }
       &__grid-container {
             margin: 1rem 0 .75rem;
@@ -38,6 +44,10 @@
       &__productsContentWrapper {
             @include displayFlexColumn;
             gap: 3rem;
+            padding: 0 5rem;
+            @include respond(tab-land) {
+                  padding: 0 10rem;
+            }
       }
       &__intro, &__bestsellers {
             @include displayFlexColumn;

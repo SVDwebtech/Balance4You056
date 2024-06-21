@@ -2,34 +2,128 @@
       @include displayFlexColumn;
       gap: 5rem;
       padding: 0 2rem;
-      width: min(100%, 45rem);
+      margin: 0 auto;
+      width: min(100%, 55rem);
+      @include respond(tab-land) {
+            width: min(100%, 85rem);
+      }
 }
 .contact {
       @include displayFlexColumn;
-      gap: 1rem;
+      gap: 2rem;
+      &__contentWrapper {
+            padding: 0 5rem;
+            @include respond(tab-land) {
+                  padding: 0 10rem;
+            }
+      }
+      &__contactDetails {
+            @include displayFlexColumn;
+            gap: 3rem;
+      }
+      &__contactDetailsElementsContainer {
+            @include displayFlexColumn;
+            gap: 3rem;
+      }
+      &__shopImgandGoogleMapsContainer {
+            @include displayFlexColumn;
+            gap: 1rem;
+            background-color: $sunset-cream;
+            border: 1px solid $light-grey;
+            padding: 1rem;
+            @include respond(tab-land) {
+                  @include displayFlexRow;
+                  gap: 5rem;
+                  padding: 2rem;
+            }
+      }
+      &__figureShopImg {
+            // background-color: $sunset-cream;
+            // border: 1px solid $light-grey;
+            // padding: 1rem;
+            @include respond(tab-land) {
+                  flex: 0 0 45%;
+            }
+      }
+      &__contactShopImg {
+            display: block;
+            border: 1px solid $light-grey;
+            margin-bottom: .5rem;
+            width: 100%;
+            height: auto;
+      }
       &__contactContentWrapper {
             @include displayFlexColumn;
             gap: 3rem;
       }
+      &__addressAndNewsLetterContainer {
+            @include displayFlexColumn;
+            gap: 3rem;
+            @include respond(tab-land) {
+                  @include displayFlexRow;
+                  align-items: flex-start;
+                  gap: 5rem;
+            }
+      }
       &__address, &__googleMaps {
             @include displayFlexColumn;
             gap: 2rem;
+            @include respond(tab-land) {
+                  flex: 0 0 45%;
+                  gap: 2rem;
+            }
+      }
+      &__address {
+            @include respond(tab-land) {
+                  align-items: flex-start;
+            }
       }
       &__contactLinkContact {
             @include displayFlexColumn;
             gap: .5rem;
+            @include respond(tab-land) {
+                  @include displayFlexRow;
+                  align-items: flex-start;
+                  gap: .5rem;
+            }
+      }
+      &__googleMapsContainer {
+            width: 100%;
+            @include respond(tab-land) {
+                  flex: 0 0 45%;
+            }
       }
       &__googleIframeContainer {
-            border: 2px solid $yale-blue;
-            width: min(100%, 45rem);
-            padding: 1rem 1rem .5rem;
+            width: 100%;
+            border: 1px solid $light-grey;
+            margin-bottom: .5rem;
       }
       &__googleIframe {
+            display: block;
             width: min(100%, 45rem);
             height: min(65vw, 28rem);
+            @include respond(tab-land) {
+                  height: 23rem;
+            }
+      }
+      &__contactIconContact {
+            width: 2.7rem;
+            height: 2.7rem;
+      }
+      &__contactIconContactAddress {
+            width: 2.7rem;
+            height: 2.7rem;
+            @include respond(tab-land) {
+                  width: 3.5rem;
+                  height: 3.5rem;
+            }
       }
       &__contactDetailsBtn {
             @include displayFlexRow;
             gap: .5rem;
+      }
+      &__joinNewsLetter {
+            @include displayFlexColumn;
+            gap: 1rem;
       }
 }
