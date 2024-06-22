@@ -164,7 +164,7 @@ body {
   align-items: center;
   gap: 1rem;
   align-items: stretch;
-  gap: 5rem;
+  gap: 12rem;
   background-color: #efefef;
   /* This makes dealing with the sizes of elements much easier, 
   	and generally eliminates a number of pitfalls you can stumble on
@@ -1479,7 +1479,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  gap: 5rem;
+  gap: 12rem;
   padding: 0 2rem;
 }
 
