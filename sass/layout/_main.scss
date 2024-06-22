@@ -17,9 +17,9 @@
             gap: 2rem;
       }
       &__article {
-            padding: 0 5rem;
+            padding: 0 0rem;
             @include respond(tab-land) {
-                  padding: 0 10rem;
+                  padding: 0 5rem;
             }
       }
       &__grid-container {
@@ -44,9 +44,9 @@
       &__productsContentWrapper {
             @include displayFlexColumn;
             gap: 3rem;
-            padding: 0 5rem;
+            padding: 0 0rem;
             @include respond(tab-land) {
-                  padding: 0 10rem;
+                  padding: 0 5rem;
             }
       }
       &__intro, &__bestsellers {

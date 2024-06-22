@@ -1072,11 +1072,11 @@ body {
   gap: 2rem;
 }
 .contact__contentWrapper {
-  padding: 0 5rem;
+  padding: 0 0rem;
 }
 @media (min-width: 56.25em) {
   .contact__contentWrapper {
-    padding: 0 10rem;
+    padding: 0 5rem;
   }
 }
 .contact__contactDetails {
@@ -1507,11 +1507,11 @@ body {
   gap: 2rem;
 }
 .about__article {
-  padding: 0 5rem;
+  padding: 0 0rem;
 }
 @media (min-width: 56.25em) {
   .about__article {
-    padding: 0 10rem;
+    padding: 0 5rem;
   }
 }
 .about__grid-container {
@@ -1547,11 +1547,11 @@ body {
   align-items: center;
   gap: 1rem;
   gap: 3rem;
-  padding: 0 5rem;
+  padding: 0 0rem;
 }
 @media (min-width: 56.25em) {
   .products__productsContentWrapper {
-    padding: 0 10rem;
+    padding: 0 5rem;
   }
 }
 .products__intro, .products__bestsellers {

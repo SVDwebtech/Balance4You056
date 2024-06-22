@@ -12,9 +12,9 @@
       @include displayFlexColumn;
       gap: 2rem;
       &__contentWrapper {
-            padding: 0 5rem;
+            padding: 0 0rem;
             @include respond(tab-land) {
-                  padding: 0 10rem;
+                  padding: 0 5rem;
             }
       }
       &__contactDetails {
