@@ -1069,7 +1069,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  gap: 2rem;
+  gap: 4rem;
 }
 .contact__contentWrapper {
   padding: 0 0rem;
@@ -1489,7 +1489,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  gap: 3rem;
+  gap: 4rem;
   width: min(100%, 55rem);
 }
 @media (min-width: 56.25em) {
