@@ -1325,9 +1325,15 @@ body {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    align-items: flex-end;
     gap: 5rem;
     background-size: 75%;
     padding: 5rem 2rem 7rem;
+  }
+}
+@media (min-width: 75em) {
+  .header__hero {
+    gap: 10rem;
   }
 }
 .header__heroOther {
@@ -1377,6 +1383,11 @@ body {
 @media (min-width: 56.25em) {
   .hero__logoImg {
     width: 24rem;
+  }
+  .hero__cta {
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 0.5rem;
   }
 }
 

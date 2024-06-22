@@ -15,9 +15,13 @@
             position: relative;
             @include respond(tab-land) {
                   @include displayFlexRow;
+                  align-items: flex-end;
                   gap: 5rem;
                   background-size: 75%;
                   padding: 5rem 2rem 7rem;
+            }
+            @include respond(desk) {
+                  gap: 10rem;
             }
       }
       &__heroOther {
@@ -56,6 +60,11 @@
       @include respond(tab-land) {
             &__logoImg {
                   width: 24rem;
+            }
+            &__cta {
+                  justify-content: space-between;
+                  align-items: flex-start;
+                  padding-bottom: .5rem;
             }
       }
 }
