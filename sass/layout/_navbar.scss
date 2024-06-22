@@ -1,36 +1,38 @@
 //style navbar
 .navbarSection {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: url("/img/WebsiteImages/Balance4YouDarkWoodHeroBackGroundPatternLandscape.webp");
-      background-position: center;
-      background-size: 100%;
-      background-repeat: no-repeat;
-      padding: .25rem 2rem;
-      visibility: hidden;
-      opacity: 0;
-      position: fixed;
-      top: 0;
-      left: 0; 
-      right: 0;
-      z-index: 1000;
-      transition: all .6s;
-      &__iconsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to top, rgba($dark, 1) 20%, transparent 60%),
+                url("/img/WebsiteImages/Balance4YouDarkWoodHeroBackGroundPatternLandscape.webp");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    // background-color: $licorice-black; 
+    padding: 1rem 2rem;
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    right: 0;
+    z-index: 1000;
+    transition: all .6s;
+    &__iconsContainer {
         @include displayFlexRow;
         justify-content: space-between;
         gap: 2rem;
-        width: 20rem;
-      }
-      @include respond(tab-port) {
-          padding: .25rem 4rem;        
-      }
-      @media (min-width: 2000px) {
-          margin: 0 auto;
-          max-width: 2000px;
-      }
+        width: min(45%, 20rem);
+    }
+    @include respond(tab-port) {
+        padding: 1rem 4rem;        
+    }
+    @media (min-width: 2000px) {
+        margin: 0 auto;
+        max-width: 2000px;
+    }
   }
   .navbar--background {
-      background-color: $dark;
+      background-color: $licorice-black;
       border-bottom: 1px solid $goldenrod-yellow;
   }

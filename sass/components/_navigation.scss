@@ -1,24 +1,44 @@
 // style navigation
 .logo {
-      &__figure {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            gap: clamp(.12rem, 3vw, 4rem);
-            position: relative;
-            z-index: 100;
-      }
-      &__img {
+    &__figure {
+        @include displayFlexColumn;
+        gap: 0rem;
+        position: relative;
+        z-index: 100;
+    }
+    &__img {
+        display: block;
+        width: 10rem;
+        height: auto;
+    }
+    &__text {
+        @include displayFlexColumn;
+        gap: 0rem;
+    } 
+    &__hr {
+            background: linear-gradient(to right, rgba($dark, .35), rgba($goldenrod-yellow, 1) 20%, rgba($goldenrod-yellow, 1) 80%, rgba($dark, .35));
+            background-color: $goldenrod-yellow;
+            width: 100%;
+            height: 1px;
+            border: none;
+    }
+    &__byline {
+            @include displayFlexRow;
+            gap: .25rem;
+    }
+    &__spacer {
             display: block;
-            width: 5rem;
-            height: auto;
-      }
-  }
+            background-color: $goldenrod-yellow;
+            border-radius: 50%;
+            height: 3px;
+            width: 3px;
+            margin: 0 .15rem;
+    }
+}
 .navbar__icon {
     justify-items: flex-end;
     display: block;
-    width: 2.8rem;
+    width: clamp(3rem, 9vw, 3.5rem);
     height: auto;
 }
 .hamburgerBtn {
