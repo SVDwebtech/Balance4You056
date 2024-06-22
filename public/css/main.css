@@ -1326,6 +1326,7 @@ body {
     align-items: center;
     gap: 1rem;
     gap: 5rem;
+    background-size: 75%;
     padding: 5rem 2rem 7rem;
   }
 }
