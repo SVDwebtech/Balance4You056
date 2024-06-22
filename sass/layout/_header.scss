@@ -3,10 +3,10 @@
             @include displayFlexColumn;
             justify-content: flex-start;
             gap: 3rem;
-            background: linear-gradient(to bottom, rgba($dark, 1) 3%, transparent 30%),
-                        linear-gradient(to top, rgba($dark, 1) 3%, transparent 30%),
-                        linear-gradient(to right, rgba($dark, 1) 3%, transparent 50%),
-                        linear-gradient(to left, rgba($dark, 1) 3%, transparent 50%), 
+            background: linear-gradient(to bottom, rgba($dark, .7) 3%, transparent 10%),
+                        linear-gradient(to top, rgba($dark, .7) 3%, transparent 10%),
+                        linear-gradient(to right, rgba($dark, 1), transparent 40%),
+                        linear-gradient(to left, rgba($dark, 1), transparent 40%), 
                         url('/img/WebsiteImages/Balance4YouDarkWoodHeroBackGroundPatternLandscape.webp');
             background-size: 150%;
             background-position: top;
