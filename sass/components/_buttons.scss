@@ -1,5 +1,7 @@
 // style button
-.btn {  
+.btn { 
+    @include displayFlexRow;
+    gap: .5rem; 
     border: 2px solid white;
     border-top: 2px solid rgba($grey, .45);
     border-left: 2px solid rgba($grey, .45);
