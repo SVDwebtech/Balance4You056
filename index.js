@@ -102,10 +102,10 @@ app.patch('/comments/:id', (req, res) => {
 })
 
 // UnderConstructionHome
-app.get('/contact', (req, res) => {
+app.get('/underConstructionHome', (req, res) => {
       const headingH2 = "Contact Us"
       console.log("Welcome to the contact us page.")
-      res.render('contact', {headingH2});
+      res.render('home', {headingH2});
 });
 // Contact Us Page
 app.get('/contact', (req, res) => {
