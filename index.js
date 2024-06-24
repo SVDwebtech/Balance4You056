@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 app.get('/', (req, res) => {
       // res.sendFile(path.join(__dirname, 'public/html/index.html'));
       const welcome = "This is the new home of Goldberg Tobacco Wholesalers";
-      res.render('home', {data: welcome});
+      res.render('underConstruction', {data: welcome});
 });
 
 //working with params
@@ -101,6 +101,12 @@ app.patch('/comments/:id', (req, res) => {
       res.redirect('/commments');
 })
 
+// UnderConstructionHome
+app.get('/contact', (req, res) => {
+      const headingH2 = "Contact Us"
+      console.log("Welcome to the contact us page.")
+      res.render('contact', {headingH2});
+});
 // Contact Us Page
 app.get('/contact', (req, res) => {
       const headingH2 = "Contact Us"
