@@ -6,7 +6,11 @@
   "scripts": {
     "watch:sass": "sass --watch sass/main.scss public/css/main.css",
     "nodemon-watch": "nodemon index.js -e *",
-    "dev": "npm-run-all --parallel watch:sass nodemon-watch"
+    "dev": "npm-run-all --parallel watch:sass nodemon-watch",
+    "compile:sass": "sass sass/main.scss public/css/main.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' public/css/main.comp.css -o public/css/main.prefix.css",
+    "compress:css": "sass public/css/main.prefix.css public/css/main.css --style=compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
   "author": "Schalk van Dyk",
   "license": "ISC",
