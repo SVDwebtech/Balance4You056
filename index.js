@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const mysql = require("mysql2");
 const path = require('path');
 
 app.set("view engine", "ejs");
@@ -7,6 +8,19 @@ app.set("views", path.join(__dirname, "/views"));
 
 app.use(express.static(path.join(__dirname,'public'))); 
 app.use(express.urlencoded({ extended: true }));
+
+// var connection = mysql.createConnection({
+//       host: "localhost",
+//       user: "root",
+//       password: "trix66!lizd85%3$$$vok",
+//       database: "loyalty_app049",
+// });
+var connection = mysql.createConnection({
+      host: "cpr47-za1.host-ww.net",
+      user: "balance4youco_admin",
+      password: "+CVSym4bbA+?",
+      database: "balance4youco_onlineshop",
+});
 
 // app.use(() => {
 //       console.log("Received a new request!");
@@ -23,6 +37,25 @@ app.get('/underConstructionHome', (req, res) => {
       const headingH2 = "Contact Us"
       console.log("Welcome to the contact us page.")
       res.render('home', {headingH2});
+});
+// UnderConstructionOnlineShop
+app.get('/underConstructionOnlineShop', (req, res) => {
+      let q = 'SELECT * FROM Customers';
+      connection.query(q, function(err, result){
+      console.log(result[0].Email);
+      const customerEmail = result[0].Email
+      res.render('onlineShop', { customerEmail: customerEmail });
+    });
+      // find count of users in DB
+	// const q = "SELECT COUNT(*) AS count FROM users";
+	// connection.query(q, function(error, results) {
+	// 	if (error) throw error;
+	// 	const count = results[0].count;
+	// 	// respond with that count
+	// 	res.render("home", { count: count });
+	// });
+      // const data = "This is raw data: Schalk van Dyk"
+      // res.render('onlineShop', {data:data});
 });
 // //working with params
 // app.get('/xcountry/:exerciseType', (req, res) => {

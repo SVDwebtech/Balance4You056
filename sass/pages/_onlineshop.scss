@@ -1,0 +1,5 @@
+.container {
+      @include displayFlexColumn;
+      gap: 1rem;
+      margin: 0 auto;
+}
