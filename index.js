@@ -15,12 +15,12 @@ app.use(express.urlencoded({ extended: true }));
 //       password: "trix66!lizd85%3$$$vok",
 //       database: "loyalty_app049",
 // });
-var connection = mysql.createConnection({
-      host: "cpr47-za1.host-ww.net",
-      user: "balance4youco_admin",
-      password: "+CVSym4bbA+?",
-      database: "balance4youco_onlineshop",
-});
+// var connection = mysql.createConnection({
+//       host: "cpr47-za1.host-ww.net",
+//       user: "balance4youco_admin",
+//       password: "+CVSym4bbA+?",
+//       database: "balance4youco_onlineshop",
+// });
 
 // app.use(() => {
 //       console.log("Received a new request!");
