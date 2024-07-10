@@ -1,0 +1,23 @@
+.socialMediaComponent {
+      @include displayFlexColumn;
+      gap: 3rem;
+      &__navList {
+            @include displayFlexColumn;
+            gap: 2.5rem;
+      }
+      &__navLink {
+            @include displayFlexColumn;
+            gap: 0.5rem;
+      }
+      &__icon {
+            display: block;
+            width: clamp(8rem, 25vw, 8.5rem);
+            height: auto;
+      }
+      @media (min-width: 400px) {
+            &__navList {
+                  @include displayFlexRow;
+                  gap: 3.5rem;
+            }
+      }
+}
