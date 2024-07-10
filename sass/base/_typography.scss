@@ -96,16 +96,16 @@ body {
 	}
 }
 .headingH2 {
-	color: $sunset-cream;
+	color: $yale-blue;
 	font-family: 'Gagalin', Impact, 'Arial Black', sans-serif;
 	font-size: clamp(2.6rem, 7vw, 2.8rem);
 	font-weight: 400;
-	text-shadow: 1px 1px $dark;
+	// text-shadow: 1px 1px $dark;
 	text-transform: uppercase;
 	line-height: 1.2;
 	letter-spacing: 3px;
-	text-decoration: underline solid 2px;
-	text-underline-offset: 3px;
+	// text-decoration: underline solid 2px;
+	// text-underline-offset: 3px;
 	&--subpage {
 		color: $goldenrod-yellow;
 		font-size: clamp(2.4rem, 7vw, 2.6rem);
@@ -195,9 +195,10 @@ body {
 }
 .paragraph {
 	&--headingH2Container {
-		color: $sunset-cream;
+		color: $liver-brown;
 		font-size: clamp(1.1rem, 3.5vw, 1.3rem);
-		text-shadow: 1px 1px $dark;
+		font-weight: 700;
+		// text-shadow: 1px 1px $dark;
 		line-height: 1.1;
 		@include respond(tab-land) {
 			font-size: clamp(1.3rem, 3.5vw, 1.5rem);
