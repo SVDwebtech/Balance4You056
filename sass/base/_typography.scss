@@ -163,6 +163,10 @@ body {
 		line-height: 1;
 		letter-spacing: 3px;
 	}
+	&--socialMediaComponent {
+		color: $sunset-cream;
+		font-size: clamp(1.6rem, 6vw, 1.8rem);
+	}
 }
 .headingH5 {
 	font-family: 'Lato', Helvetica, Arial, 'Segoe UI', sans-serif;
@@ -259,6 +263,11 @@ body {
 		color: $forest-green;
 		text-decoration: solid underline 1px;
 		text-underline-offset: 3px;
+	}
+	&--socialMediaComponent {
+		color: $sunset-cream;
+		font-weight: 700;
+		letter-spacing: 1px;
 	}
 }
 .btn {

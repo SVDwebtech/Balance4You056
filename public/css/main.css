@@ -328,6 +328,10 @@ body {
   line-height: 1;
   letter-spacing: 3px;
 }
+.headingH4--socialMediaComponent {
+  color: #f2d297;
+  font-size: clamp(1.6rem, 6vw, 1.8rem);
+}
 
 .headingH5 {
   font-family: "Lato", Helvetica, Arial, "Segoe UI", sans-serif;
@@ -417,6 +421,11 @@ body {
   color: #419418;
   text-decoration: solid underline 1px;
   text-underline-offset: 3px;
+}
+.paragraph--socialMediaComponent {
+  color: #f2d297;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .btn {
@@ -1080,7 +1089,7 @@ body {
 }
 .socialMediaComponent__icon {
   display: block;
-  width: clamp(8rem, 25vw, 8.5rem);
+  width: clamp(3.5rem, 15vw, 4rem);
   height: auto;
 }
 @media (min-width: 400px) {
