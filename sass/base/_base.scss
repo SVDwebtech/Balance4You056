@@ -15,7 +15,7 @@ html {
 	@include respond(tab-port) {
 	/*   	tap-port 600px --> 900px */
 	/* 	12px / 16px *100 = 75.00% */
-		font-size: 68.75%; // 1rem = 12px
+		font-size: 68%; // 1rem = 12px
 	}
 	@include respond(tab-land) {
 	/*   	tap-land 900px --> 1200px */
@@ -26,12 +26,12 @@ html {
 	/*   	desk 1200px --> 1800px */
 	/* 	16px / 16px *100 = 100.00% */
 		// font-size: 100%; // 1rem = 16px 
-		font-size: 80%; // 1rem = 16px 
+		font-size: 76%; // 1rem = 16px 
 	}
 	@include respond(big-desk) {
 	/*   	big-desk 1800px + */
 	/* 	18px / 16px *100 = 112.50% */
-		font-size: 90%; // 1rem = 18px
+		font-size: 85%; // 1rem = 18px
 	}
 }
 

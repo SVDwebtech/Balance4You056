@@ -1,9 +1,9 @@
-.socialMediaComponent {
+.whatsappComponent {
       @include displayFlexColumn;
       gap: 3rem;
       box-shadow: 0 0 12px 3px rgba($dark, .45);
       background-color: $yale-blue;
-      background: url("/img/WebsiteImages/Balance4YouSocialMedia.webp");
+      background: url("/img/WebsiteImages/Balance4YouContactUs.webp");
       background-position: bottom;
       background-size: cover;
       border-radius: $br-sm;

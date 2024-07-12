@@ -59,11 +59,11 @@
       &__addressAndNewsLetterContainer {
             @include displayFlexColumn;
             gap: 3rem;
-            @include respond(tab-land) {
-                  @include displayFlexRow;
-                  align-items: flex-start;
-                  gap: 5rem;
-            }
+            // @include respond(tab-land) {
+            //       @include displayFlexRow;
+            //       align-items: flex-start;
+            //       gap: 5rem;
+            // }
       }
       &__address, &__googleMaps {
             @include displayFlexColumn;
@@ -78,14 +78,21 @@
                   align-items: flex-start;
             }
       }
+      &__contactItemContact {
+            width: 100%;
+      }
       &__contactLinkContact {
             @include displayFlexColumn;
             gap: .5rem;
-            @include respond(tab-land) {
-                  @include displayFlexRow;
-                  align-items: flex-start;
-                  gap: .5rem;
+            width: 100%;
+            @include respond(tab-port) {
+                  // @include displayFlexRow;
+                  // gap: .5rem;
+                  // margin-left: 2rem;
             }
+            // @include respond(tab-land) {
+            //       @include displayFlexRow;
+            // }
       }
       &__googleMapsContainer {
             width: 100%;
@@ -106,16 +113,34 @@
                   height: 23rem;
             }
       }
+      &__contactDetailContainer {
+            @include displayFlexColumn;
+            gap: 2rem;
+            @include respond(tab-land) {
+                  @include displayFlexRow;
+                  justify-content: space-evenly;
+                  align-items: flex-start;
+                  gap: 2rem;
+            }
+      }
       &__contactIconContact {
-            width: 2.7rem;
-            height: 2.7rem;
+            width: 4rem;
+            height: 4rem;
+      }
+      &__paragraph {
+            // @include respond(tab-land) {
+            //       width: 85%;
+            // }
+      }
+      &__paragraphContactDetail {
+            width: 18rem;
       }
       &__contactIconContactAddress {
-            width: 2.7rem;
-            height: 2.7rem;
+            width: 4rem;
+            height: 4rem;
             @include respond(tab-land) {
-                  width: 3.5rem;
-                  height: 3.5rem;
+                  width: 4rem;
+                  height: 4rem;
             }
       }
       &__contactDetailsBtn {
