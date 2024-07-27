@@ -10,7 +10,7 @@
 }
 .contact {
       @include displayFlexColumn;
-      gap: 2rem;
+      gap: 3rem;
       &__contentWrapper {
             padding: 0 0rem;
             @include respond(tab-land) {
