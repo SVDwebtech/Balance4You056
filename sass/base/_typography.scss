@@ -98,12 +98,12 @@ body {
 .headingH2 {
 	color: $yale-blue;
 	font-family: 'Gagalin', Impact, 'Arial Black', sans-serif;
-	font-size: clamp(2.6rem, 7vw, 2.8rem);
+	font-size: clamp(3.4rem, 8vw, 3.6rem);
 	font-weight: 400;
 	// text-shadow: 1px 1px $dark;
 	text-transform: uppercase;
 	line-height: 1.2;
-	letter-spacing: 3px;
+	letter-spacing: 2px;
 	// text-decoration: underline solid 2px;
 	// text-underline-offset: 3px;
 	&--subpage {
