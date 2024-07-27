@@ -1,7 +1,7 @@
 {
-  "name": "goldbergtobacco054",
+  "name": "balance4you056",
   "version": "1.0.0",
-  "description": "online shop for tobacco products",
+  "description": "online health shop",
   "main": "index.js",
   "scripts": {
     "watch:sass": "sass --watch sass/main.scss public/css/main.css",

@@ -295,6 +295,7 @@ body {
 }
 
 .headingH4 {
+  font-family: "Lato", Helvetica, Arial, "Segoe UI", sans-serif;
   font-size: clamp(1.4rem, 5vw, 1.6rem);
 }
 .headingH4--productBrandAndName {
@@ -328,15 +329,17 @@ body {
   line-height: 1;
   letter-spacing: 3px;
 }
-.headingH4--contactSections {
+.headingH4--contactSections, .headingH4--addressComponent, .headingH4--googleMapsComponent {
   color: #efefef;
   font-size: clamp(1.6rem, 5.5vw, 1.8rem);
-  font-weight: 900;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 2px;
   text-decoration: underline 2px solid #efefef;
-  text-underline-offset: 3px;
+  text-underline-offset: 4px;
   text-shadow: 2px 2px 2px #0f0400;
   text-transform: uppercase;
-  filter: drop-shadow(0 0 5px rgba(15, 4, 0, 0.5));
+  filter: drop-shadow(0 0 2px rgba(15, 4, 0, 0.75));
 }
 
 .headingH5 {
@@ -428,12 +431,33 @@ body {
   text-decoration: solid underline 1px;
   text-underline-offset: 3px;
 }
-.paragraph--socialMediaComponent {
+.paragraph--socialMediaComponent, .paragraph--whatsappComponent, .paragraph--addressComponent {
   color: #efefef;
   font-weight: 700;
   text-align: center;
   text-shadow: 2px 2px 2px #0f0400;
   letter-spacing: 1px;
+}
+.paragraph--paragraphWhatsappTextContent {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.1;
+}
+.paragraph--paragraphWhatsappTextContentChat {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.1;
+}
+.paragraph--addressComponent {
+  font-style: normal;
+}
+.paragraph--addressLink {
+  text-decoration: underline solid 1px;
+  text-underline-offset: 3px;
 }
 
 .btn {
@@ -1169,15 +1193,7 @@ body {
   gap: 1rem;
   gap: 2rem;
 }
-.whatsappComponent__navList {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  gap: 2rem;
-}
-.whatsappComponent__navLink {
+.whatsappComponent__whatsappLink {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1186,10 +1202,23 @@ body {
   gap: 0.5rem;
   filter: drop-shadow(0 0 3px rgba(15, 4, 0, 0.5));
 }
+.whatsappComponent__whatsappLinkContent {
+  position: relative;
+}
 .whatsappComponent__icon {
   display: block;
-  width: clamp(3.5rem, 15vw, 4rem);
+  filter: drop-shadow(0 0 5px rgba(15, 4, 0, 0.45));
+  width: 10rem;
   height: auto;
+  position: absolute;
+  top: -2.25rem;
+  left: -4.5rem;
+}
+.whatsappComponent__text {
+  background-color: #00D95F;
+  border: 5px solid #efefef;
+  border-radius: 100px;
+  padding: 0.5rem 3rem 0.5rem 5.5rem;
 }
 .whatsappComponent__paragraph {
   filter: drop-shadow(0 0 3px rgba(15, 4, 0, 0.5));
@@ -1212,7 +1241,6 @@ body {
 }
 @media (min-width: 56.25em) {
   .whatsappComponent {
-    background: url("/img/WebsiteImages/Balance4YouSocialMedia.webp");
     background-position: center;
     background-size: 110%;
     background-repeat: no-repeat;
@@ -1276,10 +1304,21 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  justify-content: flex-end;
   gap: 1rem;
   background-color: #f2d297;
+  background: url("/img/WebsiteImages/Balance4YouGoogleMapsBackGroundImage.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   border: 1px solid #bbbbbb;
+  box-shadow: 0 0 12px 3px rgba(15, 4, 0, 0.45);
   padding: 1rem;
+}
+@media (min-width: 320px) {
+  .contact__shopImgandGoogleMapsContainer {
+    padding: 2rem;
+  }
 }
 @media (min-width: 56.25em) {
   .contact__shopImgandGoogleMapsContainer {
@@ -1288,8 +1327,9 @@ body {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    align-items: stretch;
     gap: 5rem;
-    padding: 2rem;
+    padding: 4rem 2rem;
   }
 }
 @media (min-width: 56.25em) {
@@ -1351,29 +1391,6 @@ body {
   gap: 0.5rem;
   width: 100%;
 }
-.contact__googleMapsContainer {
-  width: 100%;
-}
-@media (min-width: 56.25em) {
-  .contact__googleMapsContainer {
-    flex: 0 0 45%;
-  }
-}
-.contact__googleIframeContainer {
-  width: 100%;
-  border: 1px solid #bbbbbb;
-  margin-bottom: 0.5rem;
-}
-.contact__googleIframe {
-  display: block;
-  width: min(100%, 45rem);
-  height: min(65vw, 28rem);
-}
-@media (min-width: 56.25em) {
-  .contact__googleIframe {
-    height: 23rem;
-  }
-}
 .contact__contactDetailContainer {
   display: flex;
   flex-direction: column;
@@ -1426,6 +1443,80 @@ body {
   align-items: center;
   gap: 1rem;
   gap: 1rem;
+}
+
+.addressComponent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 2rem;
+  background-color: rgba(2, 60, 135, 0.45);
+  border-radius: 0.25rem;
+  padding: 3rem;
+}
+.addressComponent__paragraphGetDirections, .addressComponent__addressLink {
+  width: min(100%, 30rem);
+}
+.addressComponent__addressDetailContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.addressComponent__addressLink {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 0.5rem;
+}
+.addressComponent__addressIcon {
+  display: block;
+  width: clamp(3.5rem, 15vw, 4rem);
+  height: auto;
+}
+
+.googleMapsComponent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 2rem;
+  background-color: rgba(2, 60, 135, 0.45);
+  border-radius: 0.25rem;
+  padding: 3rem;
+  width: 100%;
+}
+@media (min-width: 56.25em) {
+  .googleMapsComponent {
+    flex: 0 0 45%;
+  }
+}
+.googleMapsComponent__googleIframeContainer {
+  width: 100%;
+  border: 1px solid #bbbbbb;
+  margin-bottom: 0.5rem;
+}
+.googleMapsComponent__googleIframe {
+  display: block;
+  width: min(100%, 45rem);
+  height: min(65vw, 28rem);
+}
+@media (min-width: 56.25em) {
+  .googleMapsComponent__googleIframe {
+    height: 23rem;
+  }
+}
+
+@media (min-width: 56.25em) {
+  .addressComponent, .googleMapsComponent {
+    justify-content: flex-start;
+  }
 }
 
 .footer {

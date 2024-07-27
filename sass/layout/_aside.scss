@@ -27,14 +27,25 @@
       }
       &__shopImgandGoogleMapsContainer {
             @include displayFlexColumn;
+            justify-content: flex-end;
             gap: 1rem;
             background-color: $sunset-cream;
+            background: url("/img/WebsiteImages/Balance4YouGoogleMapsBackGroundImage.webp");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            // min-height: 50rem;
             border: 1px solid $light-grey;
+            box-shadow: 0 0 12px 3px rgba($dark, .45);
             padding: 1rem;
+            @media (min-width: 320px) {
+                  padding: 2rem;
+            }
             @include respond(tab-land) {
                   @include displayFlexRow;
+                  align-items: stretch;
                   gap: 5rem;
-                  padding: 2rem;
+                  padding: 4rem 2rem;
             }
       }
       &__figureShopImg {
@@ -94,25 +105,6 @@
             //       @include displayFlexRow;
             // }
       }
-      &__googleMapsContainer {
-            width: 100%;
-            @include respond(tab-land) {
-                  flex: 0 0 45%;
-            }
-      }
-      &__googleIframeContainer {
-            width: 100%;
-            border: 1px solid $light-grey;
-            margin-bottom: .5rem;
-      }
-      &__googleIframe {
-            display: block;
-            width: min(100%, 45rem);
-            height: min(65vw, 28rem);
-            @include respond(tab-land) {
-                  height: 23rem;
-            }
-      }
       &__contactDetailContainer {
             @include displayFlexColumn;
             gap: 2rem;
@@ -150,5 +142,58 @@
       &__joinNewsLetter {
             @include displayFlexColumn;
             gap: 1rem;
+      }
+}
+
+.addressComponent {
+      @include displayFlexColumn;
+      gap: 2rem;
+      background-color: rgba($yale-blue, .45);
+      border-radius: $br-sm;
+      padding: 3rem;
+      &__paragraphGetDirections, &__addressLink {
+            width: min(100%, 30rem);
+      }
+      &__addressDetailContainer {
+            @include displayFlexColumn;
+      }
+      &__addressLink {
+            @include displayFlexColumn;
+            gap: .5rem;
+      }
+      &__addressIcon {
+            display: block;
+            width: clamp(3.5rem, 15vw, 4rem);
+            height: auto;
+      }
+}
+.googleMapsComponent {
+      @include displayFlexColumn;
+      gap: 2rem;
+      background-color: rgba($yale-blue, .45);
+      border-radius: $br-sm;
+      padding: 3rem;
+      width: 100%;
+      @include respond(tab-land) {
+            flex: 0 0 45%;
+      }
+      &__googleIframeContainer {
+            width: 100%;
+            border: 1px solid $light-grey;
+            margin-bottom: .5rem;
+      }
+      &__googleIframe {
+            display: block;
+            width: min(100%, 45rem);
+            height: min(65vw, 28rem);
+            @include respond(tab-land) {
+                  height: 23rem;
+            }
+      }
+}
+
+.addressComponent, .googleMapsComponent {
+      @include respond(tab-land) {
+            justify-content: flex-start;
       }
 }

@@ -12,19 +12,28 @@
             @include displayFlexColumn;
             gap: 2rem;
       }
-      &__navList {
-            @include displayFlexColumn;
-            gap: 2rem;
-      }
-      &__navLink {
+      &__whatsappLink {
             @include displayFlexColumn;
             gap: 0.5rem;
             filter: drop-shadow(0 0 3px rgba($dark, .5));
       }
+      &__whatsappLinkContent {
+            position: relative;
+      }
       &__icon {
             display: block;
-            width: clamp(3.5rem, 15vw, 4rem);
+            filter: drop-shadow(0 0 5px rgba($dark, .45));
+            width: 10rem;
             height: auto;
+            position: absolute;
+            top: -2.25rem;
+            left: -4.5rem;
+      }
+      &__text {
+            background-color: #00D95F;
+            border: 5px solid $white;
+            border-radius: 100px;
+            padding: .5rem 3rem .5rem 5.5rem;
       }
       &__paragraph {
             filter: drop-shadow(0 0 3px rgba($dark, .5));
@@ -41,7 +50,6 @@
       }
       @include respond(tab-land) {
             // background: linear-gradient(to right, rgba($yale-blue, .95) 10%, transparent, rgba($yale-blue, .95) 90%), url("/img/WebsiteImages/Balance4YouSocialMedia.webp");
-            background: url("/img/WebsiteImages/Balance4YouSocialMedia.webp");
             background-position: center;
             background-size: 110%;
             background-repeat: no-repeat;
