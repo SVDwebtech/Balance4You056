@@ -169,10 +169,10 @@
 }
 .googleMapsComponent {
       @include displayFlexColumn;
-      gap: 2rem;
-      background-color: rgba($yale-blue, .45);
+      // gap: 2rem;
+      // background-color: rgba($yale-blue, .45);
       border-radius: $br-sm;
-      padding: 3rem;
+      // padding: 3rem;
       width: 100%;
       @include respond(tab-land) {
             flex: 0 0 45%;
@@ -184,10 +184,11 @@
       }
       &__googleIframe {
             display: block;
-            width: min(100%, 45rem);
+            box-shadow: 0 0 12px 3px rgba($dark, .45);
+            width: 100%;
             height: min(65vw, 28rem);
             @include respond(tab-land) {
-                  height: 23rem;
+                  height: 32rem;
             }
       }
 }

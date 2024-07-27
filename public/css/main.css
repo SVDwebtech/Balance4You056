@@ -1488,10 +1488,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  gap: 2rem;
-  background-color: rgba(2, 60, 135, 0.45);
   border-radius: 0.25rem;
-  padding: 3rem;
   width: 100%;
 }
 @media (min-width: 56.25em) {
@@ -1506,12 +1503,13 @@ body {
 }
 .googleMapsComponent__googleIframe {
   display: block;
-  width: min(100%, 45rem);
+  box-shadow: 0 0 12px 3px rgba(15, 4, 0, 0.45);
+  width: 100%;
   height: min(65vw, 28rem);
 }
 @media (min-width: 56.25em) {
   .googleMapsComponent__googleIframe {
-    height: 23rem;
+    height: 32rem;
   }
 }
 
