@@ -433,7 +433,7 @@ body {
 }
 .paragraph--socialMediaComponent, .paragraph--whatsappComponent, .paragraph--addressComponent {
   color: #efefef;
-  font-weight: 700;
+  font-weight: 400;
   text-align: center;
   text-shadow: 2px 2px 2px #0f0400;
   letter-spacing: 1px;
