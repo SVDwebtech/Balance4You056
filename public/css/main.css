@@ -650,10 +650,23 @@ body {
 @media (min-width: 56.25em) {
   .headingH2Container {
     background-size: 80rem;
-    height: 28rem;
   }
   .headingH2Container__img {
     width: 25rem;
+  }
+  .headingH2Container__paragraph {
+    width: min(100%, 48rem);
+  }
+}
+@media (min-width: 75em) {
+  .headingH2Container {
+    background-size: 80rem;
+  }
+  .headingH2Container__img {
+    width: 25rem;
+  }
+  .headingH2Container__paragraph {
+    width: min(100%, 52rem);
   }
 }
 
@@ -1261,7 +1274,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  gap: 4rem;
+  gap: 2rem;
 }
 .contact__contentWrapper {
   padding: 0 0rem;
