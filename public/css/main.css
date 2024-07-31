@@ -329,7 +329,7 @@ body {
   line-height: 1;
   letter-spacing: 3px;
 }
-.headingH4--contactSections, .headingH4--addressComponent, .headingH4--googleMapsComponent {
+.headingH4--contactSections, .headingH4--addressComponent, .headingH4--googleMapsComponent, .headingH4--categoryCaptionHeading {
   color: #efefef;
   font-size: clamp(1.6rem, 5.5vw, 1.8rem);
   font-style: normal;
@@ -340,6 +340,9 @@ body {
   text-shadow: 2px 2px 2px #0f0400;
   text-transform: uppercase;
   filter: drop-shadow(0 0 2px rgba(15, 4, 0, 0.75));
+}
+.headingH4--categoryCaptionHeading {
+  text-align: center;
 }
 
 .headingH5 {
@@ -431,7 +434,7 @@ body {
   text-decoration: solid underline 1px;
   text-underline-offset: 3px;
 }
-.paragraph--socialMediaComponent, .paragraph--whatsappComponent, .paragraph--addressComponent {
+.paragraph--socialMediaComponent, .paragraph--whatsappComponent, .paragraph--addressComponent, .paragraph--categoryCaptionParagraph {
   color: #efefef;
   font-weight: 400;
   text-align: center;
@@ -459,6 +462,14 @@ body {
   text-decoration: underline solid 1px;
   text-underline-offset: 3px;
 }
+.paragraph--categoryEssentialsText {
+  color: #bbbbbb;
+  font-size: clamp(1.1rem, 4.2vw, 1.3rem);
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 1px 1px 1px #0f0400;
+  letter-spacing: 1px;
+}
 
 .btn {
   font-size: clamp(1.6rem, 6vw, 1.8rem);
@@ -466,6 +477,9 @@ body {
 }
 .btn--secondary {
   font-size: clamp(1.4rem, 5vw, 1.6rem);
+}
+.btn--categoryGoShop {
+  color: #023c87;
 }
 
 .contact__address {
@@ -525,6 +539,11 @@ body {
 .btn--secondary {
   background-color: #f2d297;
   border: 2px solid rgba(27, 21, 19, 0.95);
+  margin-top: 1rem;
+}
+.btn--categoryGoShop {
+  background-color: #efefef;
+  border: 3px solid rgba(2, 60, 135, 0.95);
   margin-top: 1rem;
 }
 .btn--primary-legaAge {
@@ -1834,14 +1853,14 @@ body {
     padding: 0 5rem;
   }
 }
-.products__intro, .products__bestsellers {
+.products__intro, .products__categories {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
   width: 100%;
 }
 .products__moreInfoBtn, .products__shopOnlineBtn {
@@ -1853,15 +1872,6 @@ body {
   gap: 0.5rem;
 }
 @media (min-width: 56.25em) {
-  .products__productsContentWrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    align-items: flex-start;
-    gap: 5rem;
-  }
   .products__intro {
     display: flex;
     flex-direction: column;
@@ -1881,6 +1891,119 @@ body {
     align-items: center;
     gap: 1rem;
     flex: 0 0 55%;
+  }
+}
+
+.categories__categoriesContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 3rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.categories__categoryItemHealthConditions {
+  background: linear-gradient(to bottom, rgba(15, 4, 0, 0.65) 35%, rgba(15, 4, 0, 0.25)), url("/img/WebsiteImages/HealthSupplements2.webp");
+}
+.categories__categoryItemBabyAndChildCare {
+  background: linear-gradient(to bottom, rgba(15, 4, 0, 0.65) 35%, rgba(15, 4, 0, 0.25)), url("/img/WebsiteImages/BabyCare.webp");
+}
+.categories__categoryItemHealthyFoodChoices {
+  background: linear-gradient(to bottom, rgba(15, 4, 0, 0.65) 35%, rgba(15, 4, 0, 0.25)), url("/img/WebsiteImages/NutritionalSncks.webp");
+}
+.categories__categoryItemLifeStyle {
+  background: linear-gradient(to bottom, rgba(15, 4, 0, 0.65) 35%, rgba(15, 4, 0, 0.25)), url("/img/WebsiteImages/LifeStyle.webp");
+}
+.categories__categoryItemPetCare {
+  background: linear-gradient(to bottom, rgba(15, 4, 0, 0.65) 35%, rgba(15, 4, 0, 0.25)), url("/img/WebsiteImages/PetCare.webp");
+}
+.categories__categoryItemProductRange {
+  background: linear-gradient(to bottom, rgba(15, 4, 0, 0.65) 35%, rgba(15, 4, 0, 0.25)), url("/img/WebsiteImages/ProductRange.webp");
+}
+.categories__categoriesItemContainer {
+  flex: 1 0 280px;
+  min-height: rem;
+}
+.categories__categoryItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-position: center;
+  background-size: 130%;
+  background-repeat: no-repeat;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 12px 3px rgba(15, 4, 0, 0.45);
+  padding: 4rem 2rem;
+  width: 100%;
+  min-height: 35rem;
+}
+.categories__categoryItemAfter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 2rem;
+  justify-content: flex-start;
+  background: linear-gradient(to bottom right, #023c87 10%, #efefef);
+  padding: 4rem 1rem;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -100;
+}
+.categories__categoryItemAfterPetCare {
+  z-index: 100;
+}
+.categories__categoryItemCloseIcon {
+  display: block;
+  width: 20rem;
+  height: auto;
+}
+.categories__categoryEssentialsList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  align-items: flex-start;
+  column-gap: 1rem;
+  row-gap: 0.5rem;
+}
+.categories__categoryEssentialsListItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  justify-content: flex-start;
+  gap: 0.25rem;
+}
+@media (min-width: 37.5em) {
+  .categories__categoriesItemContainer {
+    flex: 1 0 550px;
+  }
+}
+@media (min-width: 56.25em) {
+  .categories__categoriesItemContainer {
+    flex: 1 0 350px;
+    min-height: 30rem;
+  }
+  .categories__categoryItem {
+    background-size: 150%;
+    min-height: 30rem;
+  }
+}
+@media (min-width: 75em) {
+  .categories__categoriesItemContainer {
+    flex: 1 0 400px;
   }
 }
 
