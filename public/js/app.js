@@ -144,113 +144,132 @@ for(let item of navItems) {
   });
 }
 ///////////////////////////////////////////////////////////////////////////////////
+// category buttons logic
+///////////////////////////////////////////////////////////////////////////////////
+const openCategoryButton = document.querySelectorAll('.openCategoryButton');
+const closeCategoryButton = document.querySelectorAll('.closeCategoryButton');
+const categoryItemAfter = document. querySelectorAll('.categoryItemAfter');
+for(let i = 0; i < openCategoryButton.length; i++) {
+  openCategoryButton[i].addEventListener('click', function(){
+    categoryItemAfter[i].classList.toggle('categories__displayCategoryItemAfter');
+  });
+  closeCategoryButton[i].addEventListener('click', function(){
+    categoryItemAfter[i].scrollTo(0, 0);
+    
+    categoryItemAfter[i].classList.toggle('categories__displayCategoryItemAfter');
+  
+  });
+}
+///////////////////////////////////////////////////////////////////////////////////
 // slider logic
 ///////////////////////////////////////////////////////////////////////////////////
-const leftArr = document.querySelector(".leftArr");
-const rightArr = document.querySelector(".rightArr");
-const index = document.querySelectorAll(".slider__index");
-const slides = document.querySelectorAll(".slider__figure");
-let counter = 0;
-rightArr.addEventListener('click', function() {
-  moveSlidesToLeft();
-  setTimeout(function(){
-    indexLogicRight();
-  }, 1000);
-});
-leftArr.addEventListener('click', function() {
-  moveSlidesToRight();
-  setTimeout(function(){
-    indexLogicLeft();
-  }, 1000);
-});
-// move index to right 
-function indexLogicRight() {
-  if(counter === 6) {
-    counter = 0;
-    index[0].style.backgroundColor = '#f5aa15';
-    index[index.length - 1].style.backgroundColor = '#011338';
-  } else {
-    index[counter].style.backgroundColor = '#011338'; // oxford-blue
-    index[counter + 1].style.backgroundColor = '#f5aa15'; // harvest-gold
-    counter++;
-  };
-};
-//move index to left
-function indexLogicLeft() {
-  if(counter === 0) {
-    counter = index.length -1;
-    index[index.length - 1].style.backgroundColor = '#f5aa15';
-    index[0].style.backgroundColor = '#011338';
-  } else {
-    index[counter].style.backgroundColor = '#011338'; // oxford-blue
-    index[counter - 1].style.backgroundColor = '#f5aa15'; // harvest-gold
-    counter--;
-  };
-};
-// move slides to left
-function moveSlidesToLeft() {
-  if(counter === 6) {
-    slides[counter].style.opacity = "0";
-    setTimeout(function(){
-      slides[counter].classList.toggle("slider__displayNone");
-      slides[counter].classList.toggle("slider__displayBlock");
-    }, 700);
-    setTimeout(function(){
-      slides[0].style.opacity = "0";
-      slides[0].classList.toggle("slider__displayNone");
-      slides[0].classList.toggle("slider__displayBlock");
-    }, 800);
-    setTimeout(() => {
-      slides[0].style.opacity = "1";
-    }, 850);
-  } else {
-    slides[counter].style.opacity = "0";
-    setTimeout(function(){
-      slides[counter].classList.toggle("slider__displayNone");
-      slides[counter].classList.toggle("slider__displayBlock");
-    }, 700);
-    setTimeout(function(){
-      slides[counter + 1].style.opacity = "0";
-      slides[counter + 1].classList.toggle("slider__displayNone");
-      slides[counter + 1].classList.toggle("slider__displayBlock");
-    }, 800);
-    setTimeout(() => {
-      slides[counter + 1].style.opacity = "1";
-    }, 850);
-  }
-};
-// move slides to right
-function moveSlidesToRight() {
-  if(counter === 0) {
-    slides[counter].style.opacity = "0";
-    setTimeout(function(){
-      slides[counter].classList.toggle("slider__displayNone");
-      slides[counter].classList.toggle("slider__displayBlock");
-    }, 700);
-    setTimeout(function(){
-      slides[slides.length - 1].style.opacity = "0";
-      slides[slides.length - 1].classList.toggle("slider__displayNone");
-      slides[slides.length - 1].classList.toggle("slider__displayBlock");
-    }, 800);
-    setTimeout(() => {
-      slides[slides.length - 1].style.opacity = "1";
-    }, 850);
-  } else {
-    slides[counter].style.opacity = "0";
-    setTimeout(function(){
-      slides[counter].classList.toggle("slider__displayNone");
-      slides[counter].classList.toggle("slider__displayBlock");
-    }, 700);
-    setTimeout(function(){
-      slides[counter - 1].style.opacity = "0";
-      slides[counter - 1].classList.toggle("slider__displayNone");
-      slides[counter - 1].classList.toggle("slider__displayBlock");
-    }, 800);
-    setTimeout(() => {
-      slides[counter - 1].style.opacity = "1";
-    }, 850);
-  }
-}
+// const leftArr = document.querySelector(".leftArr");
+// const rightArr = document.querySelector(".rightArr");
+// const index = document.querySelectorAll(".slider__index");
+// const slides = document.querySelectorAll(".slider__figure");
+// let counter = 0;
+// rightArr.addEventListener('click', function() {
+//   moveSlidesToLeft();
+//   setTimeout(function(){
+//     indexLogicRight();
+//   }, 1000);
+// });
+// leftArr.addEventListener('click', function() {
+//   moveSlidesToRight();
+//   setTimeout(function(){
+//     indexLogicLeft();
+//   }, 1000);
+// });
+// // move index to right 
+// function indexLogicRight() {
+//   if(counter === 6) {
+//     counter = 0;
+//     index[0].style.backgroundColor = '#f5aa15';
+//     index[index.length - 1].style.backgroundColor = '#011338';
+//   } else {
+//     index[counter].style.backgroundColor = '#011338'; // oxford-blue
+//     index[counter + 1].style.backgroundColor = '#f5aa15'; // harvest-gold
+//     counter++;
+//   };
+// };
+// //move index to left
+// function indexLogicLeft() {
+//   if(counter === 0) {
+//     counter = index.length -1;
+//     index[index.length - 1].style.backgroundColor = '#f5aa15';
+//     index[0].style.backgroundColor = '#011338';
+//   } else {
+//     index[counter].style.backgroundColor = '#011338'; // oxford-blue
+//     index[counter - 1].style.backgroundColor = '#f5aa15'; // harvest-gold
+//     counter--;
+//   };
+// };
+// // move slides to left
+// function moveSlidesToLeft() {
+//   if(counter === 6) {
+//     slides[counter].style.opacity = "0";
+//     setTimeout(function(){
+//       slides[counter].classList.toggle("slider__displayNone");
+//       slides[counter].classList.toggle("slider__displayBlock");
+//     }, 700);
+//     setTimeout(function(){
+//       slides[0].style.opacity = "0";
+//       slides[0].classList.toggle("slider__displayNone");
+//       slides[0].classList.toggle("slider__displayBlock");
+//     }, 800);
+//     setTimeout(() => {
+//       slides[0].style.opacity = "1";
+//     }, 850);
+//   } else {
+//     slides[counter].style.opacity = "0";
+//     setTimeout(function(){
+//       slides[counter].classList.toggle("slider__displayNone");
+//       slides[counter].classList.toggle("slider__displayBlock");
+//     }, 700);
+//     setTimeout(function(){
+//       slides[counter + 1].style.opacity = "0";
+//       slides[counter + 1].classList.toggle("slider__displayNone");
+//       slides[counter + 1].classList.toggle("slider__displayBlock");
+//     }, 800);
+//     setTimeout(() => {
+//       slides[counter + 1].style.opacity = "1";
+//     }, 850);
+//   }
+// };
+// // move slides to right
+// function moveSlidesToRight() {
+//   if(counter === 0) {
+//     slides[counter].style.opacity = "0";
+//     setTimeout(function(){
+//       slides[counter].classList.toggle("slider__displayNone");
+//       slides[counter].classList.toggle("slider__displayBlock");
+//     }, 700);
+//     setTimeout(function(){
+//       slides[slides.length - 1].style.opacity = "0";
+//       slides[slides.length - 1].classList.toggle("slider__displayNone");
+//       slides[slides.length - 1].classList.toggle("slider__displayBlock");
+//     }, 800);
+//     setTimeout(() => {
+//       slides[slides.length - 1].style.opacity = "1";
+//     }, 850);
+//   } else {
+//     slides[counter].style.opacity = "0";
+//     setTimeout(function(){
+//       slides[counter].classList.toggle("slider__displayNone");
+//       slides[counter].classList.toggle("slider__displayBlock");
+//     }, 700);
+//     setTimeout(function(){
+//       slides[counter - 1].style.opacity = "0";
+//       slides[counter - 1].classList.toggle("slider__displayNone");
+//       slides[counter - 1].classList.toggle("slider__displayBlock");
+//     }, 800);
+//     setTimeout(() => {
+//       slides[counter - 1].style.opacity = "1";
+//     }, 850);
+//   }
+// }
+const myBox = document.querySelector(".redBox");
+myBox.style.backgroundColor = 'red';
 // ///////////////////////////////////////////////////////////////////////////////////
 // // legal Age btn logic
 // ///////////////////////////////////////////////////////////////////////////////////

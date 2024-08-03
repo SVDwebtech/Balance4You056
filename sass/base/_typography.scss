@@ -164,7 +164,7 @@ body {
 		line-height: 1;
 		letter-spacing: 3px;
 	} 
-	&--contactSections, &--addressComponent, &--googleMapsComponent {
+	&--contactSections, &--addressComponent, &--googleMapsComponent, &--categoryCaptionHeading {
 		color: $white;
 		font-size: clamp(1.6rem, 5.5vw, 1.8rem);
 		font-style: normal;
@@ -176,6 +176,9 @@ body {
 		text-transform: uppercase;
 		filter: drop-shadow(0 0 2px rgba($dark, .75));
 
+	}
+	&--categoryCaptionHeading {
+		text-align: center;
 	}
 }
 .headingH5 {
@@ -274,7 +277,7 @@ body {
 		text-decoration: solid underline 1px;
 		text-underline-offset: 3px;
 	}
-	&--socialMediaComponent, &--whatsappComponent, &--addressComponent {
+	&--socialMediaComponent, &--whatsappComponent, &--addressComponent, &--categoryCaptionParagraph {
 		color: $white;
 		font-weight: 400;
 		text-align: center;
@@ -305,12 +308,27 @@ body {
 		text-decoration: underline solid 1px;
 		text-underline-offset: 3px;
 	}
+	&--categoryEssentialsText {
+		color: rgba($white, .98);
+		font-weight: 700;
+		text-align: center;
+		text-shadow: 2px 2px 2px rgba($dark, 1);
+		letter-spacing: 1px;
+	}
 }
 .btn {
 	font-size: clamp(1.6rem, 6vw, 1.8rem);
 	font-weight: 700;
 	&--secondary {
 		font-size: clamp(1.4rem, 5vw, 1.6rem);
+	}
+	&--seeCatalogue {
+		color: $yale-blue;
+	}
+	&--closeIconBtn {
+		color: rgba($red, 1);
+		font-weight: 700;
+		text-shadow: 1px 1px 1px rgba($dark, .25);
 	}
 }
 .contact {

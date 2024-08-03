@@ -49,10 +49,10 @@
                   padding: 0 5rem;
             }
       }
-      &__intro, &__bestsellers {
+      &__intro, &__categories {
             @include displayFlexColumn;
             align-items: center;
-            gap: 2rem;
+            gap: 3rem;
             width: 100%;
       }
       &__moreInfoBtn, &__shopOnlineBtn {
@@ -61,9 +61,9 @@
       }
       @include respond(tab-land) {
             &__productsContentWrapper {
-                  @include displayFlexRow;
-                  align-items: flex-start;
-                  gap: 5rem;
+                  // @include displayFlexRow;
+                  // align-items: flex-start;
+                  // gap: 5rem;
             }
             &__intro {
                   @include displayFlexColumn;
@@ -78,4 +78,152 @@
                   flex: 0 0 55%;
             }
       }
+}
+.categories {
+      // padding: 2rem;
+      &__categoriesContainer {
+            @include displayFlexRow;
+            gap: 3rem;
+            flex-wrap: wrap;
+            width: 100%
+      }
+      &__categoryItemHealthConditions {
+            background: linear-gradient(to bottom, $overlayColorDark 35%, $overlayColorLight), url("/img/WebsiteImages/HealthSupplements2.webp");
+      }
+      &__categoryItemBabyAndChildCare {
+            background: linear-gradient(to bottom, $overlayColorDark 35%, $overlayColorLight), url("/img/WebsiteImages/BabyCare.webp");
+      }
+      &__categoryItemHealthyFoods {
+            background: linear-gradient(to bottom, $overlayColorDark 35%, $overlayColorLight), url("/img/WebsiteImages/NutritionalSncks.webp");
+      }
+      &__categoryItemLifeStyle {
+            background: linear-gradient(to bottom, $overlayColorDark 35%, $overlayColorLight), url("/img/WebsiteImages/LifeStyle.webp");
+      }
+      &__categoryItemPetCare {
+            background: linear-gradient(to bottom, $overlayColorDark 35%, $overlayColorLight), url("/img/WebsiteImages/PetCare.webp");
+      }
+      &__categoryItemProductRange {
+            background: linear-gradient(to bottom, $overlayColorDark 35%, $overlayColorLight), url("/img/WebsiteImages/ProductRange.webp");
+      }
+      &__categoriesItemContainer {
+            flex: 1 0 265px;
+            // min-height: rem;
+            position: relative;
+      }
+      &__categoryItem {
+            @include displayFlexColumn;
+            background-position: center;
+            background-size: 220%;
+            background-repeat: no-repeat;
+            border-radius: $br-sm;
+            box-shadow: 0 0 12px 3px rgba($dark, .45);
+            padding: 4rem 2rem;
+            width: 100%;
+            min-height: 35rem;
+      }
+      &__categoryItemAfter {
+            display: none;
+            visibility: none;
+            gap: 2rem;
+            justify-content: flex-start;
+            background: linear-gradient(to bottom right, rgba($yale-blue, 1) 10%, rgba($white, 1));
+            padding: 15rem 1rem 4rem;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -100;
+            overflow: scroll;
+      }
+      &__displayCategoryItemAfter {
+            @include displayFlexColumn;
+            justify-content: flex-start;
+            visibility: visible;
+            z-index: 100;
+            position: fixed;
+      }
+      &__categoryEssentialsList {
+            @include displayFlexColumn;
+            align-items: flex-start;
+            column-gap: 1rem;
+            row-gap: .5rem;
+            margin: 2rem 0 2rem 0;
+      }
+      &__categoryEssentialsListItem {
+            @include displayFlexRow;
+            justify-content: flex-start;
+            gap: .25rem;
+      }
+      &__categoryBtnsContainer {
+            @include displayFlexColumn;
+            padding: 0;
+      }
+      @include respond(tab-port) {
+            &__categoriesItemContainer {
+                  flex: 1 0 550px;
+            }  
+      }
+      @include respond(tab-land) {
+            &__categoriesItemContainer {
+                  flex: 1 0 350px;
+                  min-height: 30rem;
+            }
+            &__categoryItem {
+                  background-size: 150%;
+                  min-height: 30rem;
+            }
+            &__categoryItemAfter {
+                  overflow: scroll;
+            }
+            &__categoryEssentialsList {
+                  @include displayFlexRow;
+                  // justify-content: flex-start;
+                  flex-wrap: wrap;
+                  column-gap: 2rem;
+                  row-gap: .75rem;
+                  margin: 2rem 0 2rem clamp(5rem, 5vw, 12rem);
+            }
+            &__categoryEssentialsListItem {
+                  flex: 0 0 400px;
+            }
+            &__categoryBtnsContainer {
+                  @include displayFlexRow;
+                  gap: 5rem;
+            }
+      }
+      @media (min-width: 950px) {
+            &__categoryEssentialsList {
+                  margin-left: clamp(5rem, 12vw, 25rem);
+            }
+      }
+      @include respond(desk) {
+            &__categoriesItemContainer {
+                  flex: 1 0 400px;
+            }
+      }
+      // &__categoryImg {
+      //       display: block;
+      //       width: 100%;
+      //       height: auto;
+      // }
+      // &__categoryCaption::before {
+      //       content: "";
+      //       display: block;
+      //       width: 100%;
+      //       height: 100%;
+      //       background-color: rgba(purple, 1);
+      //       position: absolute;
+      //       top: 50%;
+      //       left: 50%;
+      //       transform: translate(-50%, -50%);
+      //       z-index: -100;
+      // }
+      // &__categoryCaption {
+      //       position: absolute;
+      //       top: 50%;
+      //       left: 50%;
+      //       transform: translate(-50%, -50%);
+      // }
 }

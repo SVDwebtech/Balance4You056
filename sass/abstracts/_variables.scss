@@ -7,9 +7,10 @@ $sunset-cream: #f2d297ff;
 $goldenrod-yellow: #ddad00ff;
 $yale-blue: #023c87ff;
 $dark-grey: #3e3e3e;
-$grey: #898989;
+$grey: #525252;
 $light-grey: #bbbbbb;
 $white: #efefef;
+$red: #e10000;
 
 // font-size
 $fs-heading1: 3rem;
@@ -29,6 +30,9 @@ $br-l: 1rem;
 $bs-dark: 0 0 12px 4px rgba($licorice-black, .35);
 $bs-btn: 0px 1px 3px 1px rgba($licorice-black, .35);
 $bs-btnHover: 0px 4px 12px 4px rgba($licorice-black, .35);
+
+$overlayColorDark: rgba($dark, .65);
+$overlayColorLight: rgba($dark, .25);
 
 //margin
 $mb-section: 5rem;

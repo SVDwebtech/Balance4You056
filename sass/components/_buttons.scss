@@ -31,6 +31,16 @@
         border: 2px solid rgba($licorice-black, .95);
         margin-top: 1rem;
     }
+    &--seeCatalogue {
+        background-color: rgba($white, 1);
+        border: 3px solid rgba($yale-blue, .95);
+        margin-top: 1rem;
+    }
+    &--closeIconBtn {
+        background-color: rgba($white, 1);
+        border: 3px solid rgba($red, 1);
+        margin-top: 1rem;
+    }
     &--primary-legaAge {
         background-color: $goldenrod-yellow;
         padding: .65em 3em;
