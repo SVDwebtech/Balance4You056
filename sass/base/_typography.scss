@@ -180,6 +180,17 @@ body {
 	&--categoryCaptionHeading {
 		text-align: center;
 	}
+	&--worksHeading {
+		color: $liver-brown;
+		font-size: clamp(1.6rem, 5.5vw, 1.8rem);
+		font-style: normal;
+		font-weight: 900;
+		letter-spacing: 2px;
+		text-decoration: underline 2px solid $liver-brown;
+		text-underline-offset: 4px;
+		// text-shadow: 1px 1px 1px rgba($grey, 1);
+		text-transform: uppercase;
+	}
 }
 .headingH5 {
 	font-family: 'Lato', Helvetica, Arial, 'Segoe UI', sans-serif;
@@ -322,7 +333,7 @@ body {
 	&--secondary {
 		font-size: clamp(1.4rem, 5vw, 1.6rem);
 	}
-	&--seeCatalogue {
+	&--browseCatalogueBtn {
 		color: $yale-blue;
 	}
 	&--closeIconBtn {

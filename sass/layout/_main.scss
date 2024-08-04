@@ -227,3 +227,20 @@
       //       transform: translate(-50%, -50%);
       // }
 }
+.works {
+      @include displayFlexColumn;
+      gap: 3rem;
+      &__worksContentContainer {
+            @include displayFlexColumn;
+            gap: 3rem;
+      }
+      &__worksItem {
+            @include displayFlexColumn;
+            gap: .5rem;
+      }
+      &__worksIcon {
+            display: block;
+            width: 5rem;
+            height: auto;
+      }
+}

@@ -344,6 +344,16 @@ body {
 .headingH4--categoryCaptionHeading {
   text-align: center;
 }
+.headingH4--worksHeading {
+  color: #5b3d33;
+  font-size: clamp(1.6rem, 5.5vw, 1.8rem);
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-decoration: underline 2px solid #5b3d33;
+  text-underline-offset: 4px;
+  text-transform: uppercase;
+}
 
 .headingH5 {
   font-family: "Lato", Helvetica, Arial, "Segoe UI", sans-serif;
@@ -477,7 +487,7 @@ body {
 .btn--secondary {
   font-size: clamp(1.4rem, 5vw, 1.6rem);
 }
-.btn--seeCatalogue {
+.btn--browseCatalogueBtn {
   color: #023c87;
 }
 .btn--closeIconBtn {
@@ -549,7 +559,7 @@ body {
   border: 2px solid rgba(27, 21, 19, 0.95);
   margin-top: 1rem;
 }
-.btn--seeCatalogue {
+.btn--browseCatalogueBtn {
   background-color: #efefef;
   border: 3px solid rgba(2, 60, 135, 0.95);
   margin-top: 1rem;
@@ -2058,6 +2068,36 @@ body {
   .categories__categoriesItemContainer {
     flex: 1 0 400px;
   }
+}
+
+.works {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 3rem;
+}
+.works__worksContentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 3rem;
+}
+.works__worksItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 0.5rem;
+}
+.works__worksIcon {
+  display: block;
+  width: 5rem;
+  height: auto;
 }
 
 .navbarSection {
